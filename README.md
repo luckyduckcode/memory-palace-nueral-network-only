@@ -59,6 +59,16 @@ A **Neural Network system** that implements a spatially-organized **Memory Palac
 └─────────────────────────────────────────────────────────┘
 ```
 
+## 🔬 Research-Based Refinements
+
+This implementation incorporates recent advancements in AI-enhanced memory techniques:
+
+- **Local LLM Integration**: Mnemonic generation now uses local LLMs (via Ollama) for privacy and offline capability, with fallback to cloud APIs. This aligns with studies on AI-personalized mnemonics (Alshehri, 2025).
+- **Adaptive PAO Generation**: Enhanced prompts for vivid, sensory mnemonics based on research showing improved retention through absurdity and multi-sensory cues (Reddy, 2025).
+- **Spatial Efficiency**: Neural network optimization for 3D coordinate mapping, inspired by neuroimaging studies on hippocampal efficiency (Wagner, 2021).
+
+Future refinements may include VR/AR interfaces and neuroimaging feedback loops.
+
 ## 📦 Installation & Setup
 
 ### Prerequisites
