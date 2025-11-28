@@ -128,9 +128,14 @@ This will train the memory palace NN on the provided datasets.
 The MPNN maintains a knowledge graph of concepts and facts:
 ```python
 knowledge_graph = {
-    "science": ["physics", "chemistry", "biology"],
-    "physics": ["mechanics", "thermodynamics", "electromagnetism"],
-    "history": ["ancient", "medieval", "modern"],
+    "general_knowledge": ["science", "history", "geography"],
+    "philosophy_archetypes": ["hero", "mentor", "trickster"],
+    "religion_mythology": ["creation_stories", "deities", "rituals"],
+    "social_sciences": ["politics", "economics", "sociology"],
+    "language_linguistics": ["grammar", "etymology", "phonetics"],
+    "science_technology": ["physics", "chemistry", "engineering"],
+    "applied_sciences": ["medicine", "agriculture", "computing"],
+    "arts_culture": ["literature", "music", "visual_arts"],
     ...
 }
 ```

@@ -234,19 +234,26 @@ def generate_training_data(raw_facts, loc_map):
 if __name__ == "__main__":
     # Define the major LOC categories mapping to Files 1-8
     LOC_MAPPING = {
-        '510': 'Mathematics',        # X=1
-        '530': 'Physics',            # X=2
-        '610': 'Medicine/Health',    # X=3
-        '940': 'European History',   # X=4
-        '820': 'English Literature', # X=5
-        '330': 'Economics',          # X=6
-        '700': 'Arts',               # X=7
-        '100': 'Philosophy'          # X=8
+        '000': 'General Knowledge',   # X=1
+        '100': 'Philosophy & Archetypes',  # X=2 (including Jungian archetypes, philosophical concepts)
+        '200': 'Religion & Mythology',     # X=3
+        '300': 'Social Sciences',          # X=4
+        '400': 'Language & Linguistics',   # X=5
+        '500': 'Science & Technology',     # X=6
+        '600': 'Applied Sciences',         # X=7
+        '700': 'Arts & Culture'            # X=8
     }
 
-    # Example Raw Facts (reduced to 1 for testing)
+    # Example Raw Facts (expanded to cover various categories)
     RAW_FACTS = [
-        "The inverse of a matrix is calculated using the adjoint and the determinant.",
+        "The Earth orbits the Sun once every 365.25 days.",  # General Knowledge / Science
+        "The Hero archetype represents courage and transformation in myths.",  # Philosophy & Archetypes
+        "Many religions share the concept of a creator deity.",  # Religion & Mythology
+        "Democracy is a form of government where people have power.",  # Social Sciences
+        "English has borrowed many words from Latin and French.",  # Language & Linguistics
+        "The periodic table organizes chemical elements by properties.",  # Science & Technology
+        "Vaccines work by stimulating the immune system.",  # Applied Sciences
+        "Leonardo da Vinci painted the Mona Lisa.",  # Arts & Culture
     ]
 
     print("--- Generative Mnemonic Data Generator ---")
