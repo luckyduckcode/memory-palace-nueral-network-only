@@ -5,6 +5,7 @@ import time
 import requests
 import random
 import os
+from sllm_wrapper import SLLMWrapper
 
 # --- 1. CONFIGURATION ---
 # IMPORTANT: Set your Gemini API Key in the environment variable 'GEMINI_API_KEY'
@@ -70,11 +71,38 @@ def call_gemini_api(payload):
                 return None
     return None
 
-def generate_loc_and_pao(fact_text, loc_prefixes_str):
+def generate_loc_and_pao(fact_text, loc_prefixes_str, use_local_llm=True):
     """
-    Step 1 & 2: Uses a single API call to get both the structured classification 
-    and the PAO mnemonic, enforcing structure via JSON output.
+    Step 1 & 2: Uses LLM to get both the structured classification 
+    and the PAO mnemonic. Tries local LLM first, falls back to Gemini API.
     """
+    
+    # Try local LLM first if enabled
+    if use_local_llm:
+        try:
+            sllm = SLLMWrapper()
+            prompt = f"""
+You are an expert mnemonic generator and Library of Congress (LOC) cataloger.
+Analyze this fact: '{fact_text}'
+
+Available LOC prefixes: {loc_prefixes_str}
+
+Return a JSON object with:
+- "loc_prefix": A 3-digit LOC-style classification from the available prefixes
+- "pao_mnemonic": A vivid, absurd, sensory PAO (Person-Action-Object) sentence where the fact is integrated into the Object component.
+
+Example: {{"loc_prefix": "510", "pao_mnemonic": "A crazy scientist is juggling mathematical equations involving the fact."}}
+"""
+            response = sllm._call_api(prompt, format_json=True)
+            if response:
+                try:
+                    return json.loads(response)
+                except json.JSONDecodeError:
+                    pass
+        except Exception as e:
+            print(f"Local LLM failed: {e}, falling back to Gemini API")
+    
+    # Fallback to Gemini API
     
     # 1. System Instruction: Strict persona and rules
     system_prompt = (
