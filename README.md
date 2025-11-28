@@ -112,13 +112,29 @@ model = MnemonicModel()
 # (See train_memory_palace.py for training examples)
 ```
 
-### Training
+### Data Generation
 
 ```bash
-python train_memory_palace.py
+python memory_palace_data_generator.py
 ```
 
-This will train the memory palace NN on the provided datasets.
+This generates training data by:
+1. Classifying facts into 8 knowledge domains
+2. Assigning 3D coordinates in the chess cube
+3. Creating PAO mnemonics using LLM
+4. Storing in Tier 2 for consolidation
+
+### API Usage
+
+```python
+from api_server import app
+# Run with: python api_server.py
+
+# Or use requests:
+import requests
+response = requests.post('http://localhost:5000/generate_mnemonic', 
+                        json={'fact': 'Your fact here'})
+```
 
 ## 🧠 Core Components
 
@@ -175,100 +191,137 @@ Tools for creating training data from fact databases and generating expanded dat
 ## 📊 Example Output
 
 ```
---- Processing Query: 'Find the derivative of x^2' ---
-[Stage A] Parsing Intent...
-  Intent: differentiation
-  Domain: calculus
-  Expression: x**2
-[Stage B] Searching Memory Palace...
-  Goal Loci: differentiation at (2, 5, 4)
-  Deriving Path from 'calculus' to 'differentiation'...
-  Path Sequence: ['calculus', 'differentiation']
-[Stage C] Executing Symbolic Path...
-  Symbolic Result: 2*x
-[Stage D] Generating Explanation...
-[Consolidation] Storing result in Tier 2 Memory Palace...
-  Stored at Tier 2 Loci: 2_5_4 (linked to differentiation)
+--- Processing Fact: 'The Earth orbits the Sun once every 365.25 days.' ---
+[Stage A] Encoding...
+  Semantic Vector: [0.12, 0.45, ...]
+  Category: General Knowledge (LOC 000)
+[Stage B] Spatial Mapping...
+  Assigned Coordinates: (1, 3, 5)
+  Color Parity: 1 (Alternating Property)
+[Stage C] Mnemonic Generation...
+  PAO Mnemonic: "A giant astronaut heroically orbits a blazing sun while juggling 365 colorful balls."
+[Stage D] Tier 2 Storage...
+  Stored in Tier 2 at (1, 3, 5)
 
 --- FINAL OUTPUT ---
-Query: Find the derivative of x^2
-Result: 2*x
-Tier 2 Location: 2_5_4
-
-Explanation:
-To solve this differentiation problem:
-  • Initial State: x**2
-  • Entered Domain: calculus
-  • Applied differentiation: 2*x
-
-Final Result: 2*x
+Fact: The Earth orbits the Sun once every 365.25 days.
+Coordinates: (1, 3, 5)
+Mnemonic: A giant astronaut heroically orbits a blazing sun while juggling 365 colorful balls.
+Category: General Knowledge
 ```
 
 ## 🔬 Research Background
 
-This system implements the architecture described in "A Cognitive Architecture for Robust Symbolic Reasoning: The Memory Palace Neuro-Symbolic RAG Replacement."
+This system implements a neural network-enhanced memory palace for general knowledge organization, drawing from traditional mnemonic techniques and modern AI research.
 
 ### Key Innovations
 
-1. **Structured Knowledge Graph**: Replaces flat vector search with hierarchical concept relationships
-2. **Logical Pathing**: Guarantees valid sequences of mathematical operations
-3. **Symbolic Verification**: Every step is mathematically verified (no hallucinations)
-4. **Spatial Organization**: Leverages geometric intuition for concept retrieval
+1. **3D Spatial Knowledge Graph**: Organizes concepts in a chess cube lattice for intuitive retrieval
+2. **AI-Generated Mnemonics**: Uses LLMs to create vivid, personalized PAO associations
+3. **Hierarchical Storage**: Tier 1 for facts, Tier 2 for generated content
+4. **Adaptive Categorization**: Library of Congress-inspired classification for broad knowledge domains
 
-### Advantages Over Standard RAG
+### Advantages Over Standard Methods
 
-| Feature | Standard RAG | Memory Palace RAG |
-|---------|-------------|-------------------|
-| Knowledge Store | Unstructured text corpus | Structured knowledge graph |
-| Retrieval | Vector similarity search | Spatial proximity + path derivation |
-| Output | Text snippets (unverified) | Symbolic templates (pre-verified) |
-| Reasoning | Statistical pattern matching | Logical path sequences |
+| Feature | Traditional Memory Palace | MPNN System |
+|---------|---------------------------|-------------|
+| Knowledge Scope | Limited domains | Broad categories (8 major) |
+| Mnemonic Generation | Manual | AI-assisted PAO |
+| Retrieval | Mental navigation | Spatial + neural search |
+| Scalability | 10-50 loci | 512+ 3D locations |
+| Persistence | Practice-dependent | Neural consolidation |
 
 ## 🧪 Testing
 
 ```bash
+# Run demo with sample facts
+python demo_memory_palace.py
+
+# Generate training data
+python memory_palace_data_generator.py
+
 # Test Tier 2 Memory Palace
 python test_tier2.py
 
 # Test individual components
-python mnemonic_model.py  # Test MPNN
-python symbolic_solver.py  # Test SymPy integration
-python sllm_wrapper.py     # Test Ollama (requires ollama serve)
+python -c "from mnemonic_model import MnemonicModel; print('Model loaded successfully')"
 ```
+
+### Data Generation
+
+```bash
+# Generate expanded facts dataset
+python expand_facts_dataset.py
+
+# Create training data with LLM mnemonics
+python memory_palace_data_generator.py
+```
+
+### API Server
+
+```bash
+# Start the web API
+python api_server.py
+
+# Access at http://localhost:5000
+```
+
+### GUI
+
+Open `gui.html` in a web browser for visualization.
 
 ## 📁 Project Structure
 
 ```
-memory-ai/
-├── neuro_symbolic_rag.py          # Main pipeline
-├── mnemonic_model.py               # MPNN, DIM-Net, Tier2Lattice
-├── symbolic_solver.py              # SymPy integration
-├── sllm_wrapper.py                 # Ollama interface (optional)
-├── test_tier2.py                   # Tier 2 tests
-├── requirements.txt                # Dependencies
-├── README.md                       # This file
-└── [legacy files]                  # Original data generation scripts
+memory-palace-nn/
+├── mnemonic_model.py                    # Core MPNN, DIM-Net, Tier2Lattice
+├── train_memory_palace.py               # Training script
+├── demo_memory_palace.py                # Demo script
+├── memory_palace_data_generator.py      # Data generation with LLM
+├── expand_facts_dataset.py              # Dataset expansion
+├── cluster_facts.py                     # Fact clustering
+├── api_server.py                       # Flask API server
+├── gui.html                             # Web GUI
+├── sllm_wrapper.py                      # Local LLM wrapper (Ollama)
+├── test_tier2.py                        # Tier 2 tests
+├── requirements.txt                     # Python dependencies
+├── setup_llama.sh                       # Ollama setup script
+├── facts_dataset.txt                    # Base facts
+├── facts_dataset_expanded.txt           # Expanded facts
+├── fact_clusters.json                   # Clustered facts
+├── memory_palace_training_data.csv      # Training data
+├── memory_palace_demo_results.csv       # Demo results
+├── training_history.csv                 # Training logs
+├── dim_net_final.pth                    # Trained DIM-Net model
+├── trhd_mapper_final.pth                # Trained mapper
+├── checkpoint_epoch_*.pth               # Training checkpoints
+├── README.md                            # This file
+└── .gitignore                           # Git ignore rules
 ```
 
 ## 🛣️ Roadmap
 
-- [x] Neuro-Symbolic 4-stage pipeline
+- [x] 3D Chess Cube Lattice (8x8x8)
+- [x] DIM-Net for semantic encoding
 - [x] Tier 2 Memory Palace
-- [x] Differentiation and integration
-- [ ] Equation solving
-- [ ] Expand knowledge graph (100+ concepts)
-- [ ] Train DIM-Net on mathematical corpus
-- [ ] Multi-variable calculus
-- [ ] Linear algebra operations
-- [ ] Proof verification
+- [x] PAO Mnemonic generation with LLM
+- [x] Expanded knowledge categories (8 domains)
+- [ ] VR/AR interface for immersive palaces
+- [ ] Adaptive user feedback loops
+- [ ] Multi-modal mnemonics (images, audio)
+- [ ] Large-scale knowledge graph (1000+ concepts)
+- [ ] Real-time neural efficiency monitoring
+- [ ] Cross-domain concept linking
+- [ ] Mobile app integration
 
 ## 🤝 Contributing
 
 Contributions are welcome! Areas of interest:
-- Expanding the knowledge graph
-- Adding new mathematical domains
-- Improving the symbolic solver
-- Training the DIM-Net
+- Expanding fact datasets across domains
+- Improving LLM prompts for better mnemonics
+- Adding new neural network architectures
+- Enhancing the GUI and API
+- Research integration (VR, neuroimaging)
 
 ## 📄 License
 
@@ -276,12 +329,14 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🙏 Acknowledgments
 
-- **SymPy**: Symbolic mathematics library
 - **PyTorch**: Neural network framework
-- **Ollama**: Local LLM inference (optional)
-- Research paper: "Memory Palace Neuro-Symbolic RAG Replacement"
+- **Ollama**: Local LLM inference
+- **Flask**: Web API framework
+- **spaCy & NLTK**: Natural language processing
+- **Method of Loci**: Ancient mnemonic technique
+- Research on AI-enhanced memory (Alshehri, Reddy, Wagner, 2021-2025)
 
 ---
 
-**Last Updated**: November 27, 2025  
-**Version**: 4.0.0 - Neuro-Symbolic Architecture
+**Last Updated**: November 28, 2025  
+**Version**: 2.0.0 - General Knowledge MPNN
