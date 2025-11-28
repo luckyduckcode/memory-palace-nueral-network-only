@@ -299,6 +299,11 @@ memory-palace-nn/
 └── .gitignore                           # Git ignore rules
 ```
 
+## 📚 Documentation
+
+- **[RESEARCH_OVERVIEW.md](RESEARCH_OVERVIEW.md)**: Comprehensive research document explaining the MPNN architecture, methodology, and scientific foundations
+- **[ADVANCED_GUIDE.md](ADVANCED_GUIDE.md)**: Advanced usage and technical details
+
 ## 🛣️ Roadmap
 
 - [x] 3D Chess Cube Lattice (8x8x8)
