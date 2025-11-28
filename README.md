@@ -1,69 +1,61 @@
-# Neuro-Symbolic Memory Palace: Mathematical Reasoning AI
+# Memory Palace Neural Network (MPNN)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
-[![SymPy](https://img.shields.io/badge/SymPy-Symbolic-green.svg)](https://www.sympy.org/)
 
-A **Neuro-Symbolic AI system** that replaces traditional Vector-Search RAG with a spatially-organized **Memory Palace Neural Network (MPNN)**. The system grounds mathematical problem-solving in a structured knowledge graph (Chess Cube lattice), ensuring symbolically correct, contextually grounded, and linguistically explainable derivations.
+A **Neural Network system** that implements a spatially-organized **Memory Palace Neural Network (MPNN)** for enhanced memory and knowledge retrieval. The system organizes information in a structured 3D space, enabling efficient spatial reasoning and mnemonic generation.
 
 ## 🌟 Key Features
 
-### Neuro-Symbolic Architecture
-- **4-Stage Pipeline**: Intent Parsing → Memory Palace Search → Symbolic Execution → Explanation Generation
-- **Memory Palace Neural Network (MPNN)**: Spatial reasoning over a 8×8×8 Chess Cube knowledge graph
-- **Symbolic Solver (SymPy)**: Guarantees mathematical rigor with verified symbolic execution
-- **Tier 2 Memory Palace**: Hierarchical storage for generated explanations and worked examples
-- **Path Derivation**: Logical sequences through concept space (e.g., Calculus → Differentiation → Power Rule)
+### Neural Architecture
+- **Memory Palace Neural Network (MPNN)**: Spatial reasoning over a 3D knowledge graph
+- **DIM-Net**: Neural networks mapping semantics to 3D coordinates
+- **Spatial Reasoning**: Lattice-based organization for relationship modeling
+- **Custom Loss Functions**: Accuracy, consistency, and geometric optimization
+- **PAO Mnemonic Generation**: Vivid mnemonics for facts and concepts
+- **Tier 2 Memory Palace**: Hierarchical storage for generated content
 
-### Traditional Features (Legacy)
-- **DIM-Net**: Neural networks mapping mathematical semantics to 3D coordinates
-- **Spatial Reasoning**: Chess cube lattice for mathematical relationship modeling
-- **Custom Loss Functions**: Mathematical accuracy, logical consistency, and geometric optimization
-- **PAO Mnemonic Generation**: Vivid mnemonics for mathematical formulas and theorems
+### Core Components
+- **Mnemonic Model**: Core neural network for memory palace operations
+- **Data Generators**: Tools for creating training data from facts
+- **Training Scripts**: For training and fine-tuning the model
+- **API Server**: Web interface for interacting with the model
+- **GUI**: HTML-based interface for visualization
 
 ## 🏗️ Architecture Overview
 
-### Neuro-Symbolic RAG Pipeline
+### Memory Palace Pipeline
 
 ```
 ┌──────────────┐
-│ User Query   │
-│ "Find d/dx   │
-│  of x²"      │
+│ User Input   │
+│ "Store fact" │
 └──────┬───────┘
        │
        ▼
 ┌─────────────────────────────────────────────────────────┐
-│ Stage A: sLLM Interpreter (Intent Parsing)              │
-│ • Extracts: intent=differentiation, expr=x²             │
-│ • Generates: Problem Vector (P-Vec)                     │
+│ DIM-Net Encoding                                        │
+│ • Maps semantic content to 3D coordinates              │
 └──────────────────────┬──────────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────┐
-│ Stage B: Memory Palace Neural Network (MPNN)            │
-│ • Spatial Proximity Search → Goal Loci: "power_rule"   │
-│ • Path Derivation: [calculus, differentiation]         │
+│ Spatial Storage & Retrieval                             │
+│ • Stores at optimal 3D loci                             │
+│ • Retrieves via proximity search                       │
 └──────────────────────┬──────────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────┐
-│ Stage C: Symbolic Solver (SymPy)                        │
-│ • Executes path: diff(x², x) → 2x                      │
-│ • Verifies each step symbolically                       │
+│ Mnemonic Generation                                     │
+│ • Creates PAO associations                             │
+│ • Generates vivid memory aids                          │
 └──────────────────────┬──────────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────────┐
-│ Stage D: sLLM Explainer (Natural Language)              │
-│ • Generates pedagogical explanation                     │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│ Tier 2 Memory Palace (Consolidation)                    │
-│ • Stores explanation at coords (2,5,4)                  │
-│ • Links to path: [calculus, differentiation]           │
+│ Tier 2 Consolidation                                    │
+│ • Hierarchical storage of generated content            │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -73,14 +65,12 @@ A **Neuro-Symbolic AI system** that replaces traditional Vector-Search RAG with 
 
 - Python 3.8+
 - PyTorch 2.0+
-- SymPy (for symbolic math)
-- Ollama (optional, for LLM features)
 
 ### Quick Setup
 
 ```bash
 # Clone and enter directory
-cd /path/to/memory-ai
+cd /path/to/memory-palace-nn
 
 # Create virtual environment
 python -m venv venv
@@ -88,96 +78,84 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Optional: Install Ollama for LLM features
-# Visit https://ollama.ai and run: ollama pull tinyllama
 ```
 
 ## 🚀 Usage
 
-### Quick Start (No LLM Required)
+### Quick Start
 
 ```bash
-python neuro_symbolic_rag.py
+python demo_memory_palace.py
 ```
 
-This will run demo queries:
-- Find the derivative of x²
-- Find the derivative of x³ + 2x
-- Integrate 2x
+This will run demo operations for the memory palace NN.
 
 ### Python API
 
 ```python
-from neuro_symbolic_rag import NeuroSymbolicRAG
+from mnemonic_model import MnemonicModel
 
-# Initialize (works without Ollama)
-rag = NeuroSymbolicRAG(use_ollama=False)
+# Initialize the model
+model = MnemonicModel()
 
-# Solve a problem
-result = rag.solve("Find the derivative of x^3")
-
-print(f"Result: {result['result']}")  # 3*x**2
-print(f"Explanation: {result['explanation']}")
-print(f"Tier 2 Location: {result['tier2_location']}")  # 2_5_4
+# Train or use the model for memory palace operations
+# (See train_memory_palace.py for training examples)
 ```
 
-### Supported Operations
+### Training
 
-- **Differentiation**: `"Find the derivative of x^2 + 3*x"`
-- **Integration**: `"Integrate 2*x + 1"`
-- **More coming soon**: Equation solving, simplification, etc.
+```bash
+python train_memory_palace.py
+```
+
+This will train the memory palace NN on the provided datasets.
 
 ## 🧠 Core Components
 
 ### 1. Memory Palace Neural Network (MPNN)
 **File**: `mnemonic_model.py`
 
-The MPNN maintains a knowledge graph of mathematical concepts:
+The MPNN maintains a knowledge graph of concepts and facts:
 ```python
 knowledge_graph = {
-    "calculus": ["differentiation", "integration", "limits"],
-    "differentiation": ["power_rule", "chain_rule", "product_rule"],
-    "algebra": ["linear_equations", "quadratic_equations"],
+    "science": ["physics", "chemistry", "biology"],
+    "physics": ["mechanics", "thermodynamics", "electromagnetism"],
+    "history": ["ancient", "medieval", "modern"],
     ...
 }
 ```
 
-Each concept is mapped to 3D coordinates in the Chess Cube:
-- `calculus` → (2, 5, 3)
-- `differentiation` → (2, 5, 4)
-- `power_rule` → (2, 6, 4)
+Each concept is mapped to 3D coordinates in the spatial lattice:
+- `science` → (1, 2, 3)
+- `physics` → (1, 2, 4)
+- `mechanics` → (1, 3, 4)
 
-### 2. Symbolic Solver
-**File**: `symbolic_solver.py`
+### 2. DIM-Net Encoder
+**File**: `mnemonic_model.py`
 
-Executes mathematical operations using SymPy:
+Maps semantic content to 3D coordinates:
 ```python
-solver = SymbolicSolver()
-result, history = solver.execute_path("x**2", ["calculus", "differentiation"])
-# Result: "2*x"
-# History: ["Initial State: x**2", "Applied differentiation: 2*x"]
+encoder = DIMNet()
+coordinates = encoder.encode("quantum mechanics")
+# Returns: (x, y, z) coordinates
 ```
 
 ### 3. Tier 2 Memory Palace
 **File**: `mnemonic_model.py` (Tier2Lattice class)
 
-A "shadow" memory palace that stores generated knowledge:
-- **Tier 1**: Foundational concepts and axioms (read-only)
-- **Tier 2**: Generated explanations and worked examples (writable)
+A hierarchical storage system for generated content:
+- **Tier 1**: Foundational concepts and facts (read-only)
+- **Tier 2**: Generated associations and mnemonics (writable)
 
 Each Tier 2 entry includes:
-- The explanation text
-- The path sequence that generated it
+- The generated content
+- Associated concepts
 - Timestamp metadata
 
-### 4. sLLM Wrapper (Optional)
-**File**: `sllm_wrapper.py`
+### 4. Data Generators
+**Files**: `memory_palace_data_generator.py`, `expand_facts_dataset.py`
 
-Interfaces with local Ollama for:
-- Natural language intent parsing
-- Explanation generation
-- Embedding generation
+Tools for creating training data from fact databases and generating expanded datasets for training.
 
 ## 📊 Example Output
 
