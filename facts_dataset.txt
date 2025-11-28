@@ -1,0 +1,528 @@
+# Mathematics (510) - 64 facts
+The inverse of a matrix is calculated using the adjoint and the determinant.
+Fibonacci sequence begins with 0 and 1, and each subsequent number is the sum of the previous two.
+The Pythagorean theorem states that a² + b² = c² for right triangles.
+Euler's identity is e^(iπ) + 1 = 0.
+The derivative of x² is 2x.
+A prime number is only divisible by 1 and itself.
+The quadratic formula is x = (-b ± √(b²-4ac)) / 2a.
+Pi is approximately 3.14159.
+The integral of 1/x is ln|x| + C.
+A function is continuous if there are no breaks in its graph.
+The Fundamental Theorem of Calculus connects differentiation and integration.
+Complex numbers have the form a + bi where i² = -1.
+The binomial theorem expands (a+b)ⁿ.
+L'Hôpital's rule helps evaluate limits of indeterminate forms.
+A vector has both magnitude and direction.
+The dot product of two perpendicular vectors is zero.
+Matrices can be multiplied if their inner dimensions match.
+The determinant of a 2×2 matrix is ad - bc.
+Eigenvalues satisfy the equation Ax = λx.
+Taylor series approximates functions using polynomials.
+The chain rule states (f∘g)' = f'(g(x))·g'(x).
+Integration by parts uses the formula ∫udv = uv - ∫vdu.
+A set is a collection of distinct objects.
+The empty set contains no elements.
+The union of sets A and B contains all elements from both.
+The intersection of sets contains only common elements.
+A function is injective if each output has exactly one input.
+A function is surjective if every element in the codomain is mapped.
+The Riemann sum approximates the area under a curve.
+Limits describe the behavior of functions as x approaches a value.
+Asymptotes are lines that a curve approaches but never touches.
+The mean value theorem guarantees a point where f'(c) = average rate of change.
+Partial derivatives measure change with respect to one variable.
+A differential equation relates a function to its derivatives.
+The Laplace transform converts differential equations to algebraic equations.
+Fourier series represents periodic functions as sums of sines and cosines.
+The gradient vector points in the direction of steepest ascent.
+The divergence measures the magnitude of a vector field's source or sink.
+The curl measures the rotation of a vector field.
+Green's theorem relates a line integral to a double integral.
+Stokes' theorem generalizes Green's theorem to surfaces.
+The divergence theorem relates flux through a surface to divergence in a volume.
+A metric space has a distance function satisfying specific properties.
+A topology defines which sets are open in a space.
+A compact set is closed and bounded in Euclidean space.
+A connected set cannot be divided into two disjoint open sets.
+The Heine-Borel theorem characterizes compact sets in Rⁿ.
+A Cauchy sequence has terms that get arbitrarily close together.
+A complete metric space has all Cauchy sequences converging.
+The Bolzano-Weierstrass theorem states bounded sequences have convergent subsequences.
+A group is a set with an associative binary operation, identity, and inverses.
+A ring has two operations: addition and multiplication.
+A field is a ring where every nonzero element has a multiplicative inverse.
+Vector spaces have addition and scalar multiplication operations.
+A basis is a linearly independent spanning set.
+The dimension of a vector space is the size of its basis.
+Linear transformations preserve vector addition and scalar multiplication.
+The kernel of a transformation is the set of vectors mapping to zero.
+The rank-nullity theorem relates dimension, rank, and nullity.
+Orthogonal matrices preserve lengths and angles.
+The spectral theorem diagonalizes symmetric matrices.
+Singular value decomposition factors any matrix as UΣV^T.
+The Gram-Schmidt process orthonormalizes a set of vectors.
+A norm measures the size of a vector.
+An inner product generalizes the dot product.
+
+# Physics (530) - 64 facts
+Albert Einstein published his theory of general relativity in 1915.
+Newton's first law states that objects in motion stay in motion unless acted upon.
+The speed of light in vacuum is approximately 299,792,458 meters per second.
+E=mc² relates energy to mass and the speed of light.
+Planck's constant is approximately 6.626 × 10⁻³⁴ J·s.
+The uncertainty principle limits simultaneous measurement of position and momentum.
+Schrödinger's equation describes quantum mechanical systems.
+Wave-particle duality means particles exhibit both wave and particle properties.
+The photoelectric effect shows light behaves as particles called photons.
+Quantum entanglement links particles regardless of distance.
+The double-slit experiment demonstrates wave interference.
+The Pauli exclusion principle prevents identical fermions from occupying the same state.
+Bosons can occupy the same quantum state unlike fermions.
+The strong nuclear force binds quarks together.
+The weak nuclear force is responsible for radioactive decay.
+Electromagnetic force acts between charged particles.
+Gravity is the weakest of the four fundamental forces.
+Newton's law of gravitation is F = Gm₁m₂/r².
+The gravitational constant G is approximately 6.674 × 10⁻¹¹ N·m²/kg².
+Black holes have escape velocities exceeding the speed of light.
+The event horizon is the boundary beyond which nothing can escape a black hole.
+Hawking radiation allows black holes to slowly evaporate.
+The Big Bang theory describes the universe's origin approximately 13.8 billion years ago.
+Cosmic microwave background radiation is remnant heat from the Big Bang.
+Dark matter makes up about 27% of the universe's mass-energy.
+Dark energy comprises about 68% of the universe and drives expansion.
+Redshift indicates objects moving away from us in an expanding universe.
+Hubble's law relates galaxy recession velocity to distance.
+The cosmological constant represents dark energy in Einstein's equations.
+Thermodynamics' first law states energy is conserved.
+The second law of thermodynamics states entropy always increases.
+The third law states absolute zero cannot be reached.
+Entropy measures disorder in a system.
+The Carnot cycle is the most efficient heat engine cycle.
+Heat flows from hot to cold objects spontaneously.
+Temperature measures average kinetic energy of particles.
+Absolute zero is 0 Kelvin or -273.15°C.
+The ideal gas law is PV = nRT.
+Pressure is force per unit area.
+Boyle's law states pressure and volume are inversely proportional at constant temperature.
+Charles's law states volume and temperature are proportional at constant pressure.
+Avogadro's law states equal volumes of gases contain equal numbers of molecules.
+The Boltzmann constant relates temperature to energy.
+Maxwell-Boltzmann distribution describes particle speeds in a gas.
+Diffusion is the movement of particles from high to low concentration.
+Osmosis is diffusion of water across a semipermeable membrane.
+Bernoulli's principle relates fluid speed to pressure.
+Viscosity measures a fluid's resistance to flow.
+Reynolds number predicts whether flow is laminar or turbulent.
+The continuity equation expresses conservation of mass in fluids.
+Archimedes' principle states buoyant force equals displaced fluid weight.
+Surface tension causes liquids to minimize surface area.
+Capillary action draws liquids up narrow tubes.
+Ohm's law states V = IR for electrical circuits.
+Kirchhoff's current law states current into a node equals current out.
+Kirchhoff's voltage law states voltage around a loop sums to zero.
+Capacitance is the ability to store electrical charge.
+Inductance opposes changes in current.
+Faraday's law relates changing magnetic flux to induced voltage.
+Lenz's law states induced current opposes the change causing it.
+Maxwell's equations unify electricity and magnetism.
+The Lorentz force acts on charged particles in electromagnetic fields.
+Ampère's law relates magnetic fields to electric currents.
+Gauss's law relates electric flux to enclosed charge.
+
+# Medicine/Health (610) - 64 facts
+The human heart has four chambers: two atria and two ventricles.
+DNA is a double helix structure discovered by Watson and Crick.
+Red blood cells carry oxygen throughout the body.
+White blood cells fight infections and disease.
+Platelets help blood clot to stop bleeding.
+The brain contains approximately 86 billion neurons.
+Neurons communicate through electrical and chemical signals.
+Synapses are junctions between neurons.
+Neurotransmitters are chemical messengers in the nervous system.
+Dopamine is associated with reward and motivation.
+Serotonin regulates mood, sleep, and appetite.
+The hippocampus is crucial for memory formation.
+The amygdala processes emotions, especially fear.
+The prefrontal cortex handles executive functions and decision-making.
+The cerebellum coordinates movement and balance.
+The spinal cord transmits signals between brain and body.
+Reflexes are automatic responses to stimuli.
+The autonomic nervous system controls involuntary functions.
+The sympathetic nervous system activates fight-or-flight responses.
+The parasympathetic nervous system promotes rest and digestion.
+Insulin regulates blood sugar levels.
+Diabetes occurs when the body cannot properly use insulin.
+Type 1 diabetes is an autoimmune condition.
+Type 2 diabetes is often related to lifestyle factors.
+The pancreas produces insulin and digestive enzymes.
+The liver detoxifies blood and produces bile.
+The kidneys filter waste from blood to produce urine.
+Nephrons are the functional units of kidneys.
+The bladder stores urine before excretion.
+The lungs exchange oxygen and carbon dioxide.
+Alveoli are tiny air sacs where gas exchange occurs.
+The diaphragm is the primary muscle of respiration.
+Hemoglobin in red blood cells binds oxygen.
+Carbon dioxide is transported in blood as bicarbonate.
+The trachea carries air to the bronchi.
+Bronchi branch into smaller bronchioles in the lungs.
+Asthma causes airway inflammation and constriction.
+COPD is chronic obstructive pulmonary disease.
+Pneumonia is infection and inflammation of lung tissue.
+The immune system defends against pathogens.
+Antibodies are proteins that recognize specific antigens.
+B cells produce antibodies.
+T cells directly attack infected cells.
+Vaccines train the immune system to recognize pathogens.
+Inflammation is the body's response to injury or infection.
+Histamine triggers inflammatory responses.
+Allergies are overreactions to harmless substances.
+Anaphylaxis is a severe, life-threatening allergic reaction.
+The thymus gland produces T cells.
+Bone marrow produces blood cells.
+The spleen filters blood and stores white blood cells.
+Lymph nodes filter lymph fluid and trap pathogens.
+The lymphatic system returns fluid to the bloodstream.
+Antibiotics kill or inhibit bacterial growth.
+Viruses require host cells to reproduce.
+Bacteria are single-celled prokaryotic organisms.
+Fungi can cause infections like athlete's foot.
+Parasites live on or in host organisms.
+Mitosis is cell division producing identical daughter cells.
+Meiosis produces sex cells with half the chromosomes.
+Genes are segments of DNA encoding proteins.
+Chromosomes are structures containing DNA.
+Humans have 23 pairs of chromosomes.
+Mutations are changes in DNA sequence.
+
+# European History (940) - 64 facts
+The primary cause of World War I was the assassination of Archduke Franz Ferdinand in 1914.
+The Battle of Gettysburg in 1863 was a major turning point in the American Civil War.
+The French Revolution began in 1789.
+Napoleon Bonaparte crowned himself Emperor in 1804.
+The Battle of Waterloo in 1815 ended Napoleon's rule.
+The Industrial Revolution started in Britain in the late 18th century.
+The Magna Carta was signed in 1215, limiting royal power.
+The Black Death killed millions in Europe during the 14th century.
+The Renaissance began in Italy in the 14th century.
+Leonardo da Vinci painted the Mona Lisa around 1503-1519.
+Michelangelo painted the Sistine Chapel ceiling from 1508-1512.
+The Protestant Reformation began when Martin Luther posted his 95 Theses in 1517.
+The Spanish Armada was defeated by England in 1588.
+The Thirty Years' War lasted from 1618 to 1648.
+The Treaty of Westphalia in 1648 ended the Thirty Years' War.
+Louis XIV, the Sun King, ruled France from 1643 to 1715.
+The Palace of Versailles was built under Louis XIV.
+The Glorious Revolution of 1688 established constitutional monarchy in England.
+The Act of Union in 1707 united England and Scotland.
+The Seven Years' War lasted from 1756 to 1763.
+Catherine the Great ruled Russia from 1762 to 1796.
+The storming of the Bastille occurred on July 14, 1789.
+The Reign of Terror lasted from 1793 to 1794 during the French Revolution.
+The Congress of Vienna in 1815 redrew Europe's map after Napoleon.
+The Greek War of Independence lasted from 1821 to 1829.
+Queen Victoria reigned over Britain from 1837 to 1901.
+The Crimean War was fought from 1853 to 1856.
+The unification of Italy was completed in 1871.
+The unification of Germany was completed in 1871 under Bismarck.
+The Franco-Prussian War lasted from 1870 to 1871.
+The Berlin Conference of 1884-1885 divided Africa among European powers.
+The Dreyfus Affair divided France in the 1890s.
+The Boer Wars were fought in South Africa from 1880-1881 and 1899-1902.
+The Russian Revolution of 1905 forced Tsar Nicholas II to create a parliament.
+World War I lasted from 1914 to 1918.
+The Treaty of Versailles was signed in 1919, ending World War I.
+The League of Nations was established in 1920.
+The Russian Revolution of 1917 overthrew the Tsar.
+The Bolsheviks seized power in October 1917.
+The Russian Civil War lasted from 1918 to 1921.
+The Weimar Republic governed Germany from 1919 to 1933.
+Hyperinflation devastated Germany's economy in 1923.
+Mussolini's March on Rome occurred in 1922.
+The Great Depression began with the 1929 stock market crash.
+Hitler became Chancellor of Germany in 1933.
+The Spanish Civil War lasted from 1936 to 1939.
+The Munich Agreement in 1938 appeased Hitler by ceding Czechoslovakia.
+World War II began on September 1, 1939 with Germany's invasion of Poland.
+The Battle of Britain was fought in 1940.
+Operation Barbarossa, the invasion of the Soviet Union, began June 22, 1941.
+The attack on Pearl Harbor occurred on December 7, 1941.
+The Battle of Stalingrad lasted from 1942 to 1943.
+D-Day, the Normandy invasion, occurred on June 6, 1944.
+The Holocaust killed six million Jews during World War II.
+The atomic bombs were dropped on Hiroshima and Nagasaki in August 1945.
+World War II ended in 1945.
+The United Nations was founded in 1945.
+The Iron Curtain divided Europe after World War II.
+The Berlin Airlift lasted from 1948 to 1949.
+NATO was established in 1949.
+The Korean War lasted from 1950 to 1953.
+The Warsaw Pact was formed in 1955.
+The Hungarian Revolution was crushed by Soviet forces in 1956.
+The Berlin Wall was built in 1961.
+
+# English Literature (820) - 64 facts
+Hamlet is generally considered William Shakespeare's longest play.
+Shakespeare was born in Stratford-upon-Avon in 1564.
+Romeo and Juliet is a tragedy about two star-crossed lovers.
+Macbeth features three witches who prophesy the protagonist's rise and fall.
+King Lear tells the story of a king who divides his kingdom among his daughters.
+Othello is a tragedy about jealousy and manipulation.
+A Midsummer Night's Dream is a comedy involving fairies and lovers.
+The Tempest is believed to be Shakespeare's final play.
+Sonnets are 14-line poems, and Shakespeare wrote 154 of them.
+To be or not to be is a famous soliloquy from Hamlet.
+Geoffrey Chaucer wrote The Canterbury Tales in Middle English.
+The Canterbury Tales features pilgrims telling stories on their journey.
+Beowulf is an Old English epic poem about a hero fighting monsters.
+John Milton wrote Paradise Lost, an epic about the fall of man.
+Paradise Lost depicts Satan's rebellion against God.
+Jane Austen wrote Pride and Prejudice in 1813.
+Pride and Prejudice features Elizabeth Bennet and Mr. Darcy.
+Emma is another novel by Jane Austen about a matchmaker.
+Sense and Sensibility contrasts two sisters with different temperaments.
+Charles Dickens wrote A Tale of Two Cities set during the French Revolution.
+Great Expectations follows the life of Pip, an orphan.
+Oliver Twist tells the story of an orphan in Victorian London.
+A Christmas Carol features Ebenezer Scrooge and three ghosts.
+David Copperfield is considered Dickens' most autobiographical novel.
+The Brontë sisters were Charlotte, Emily, and Anne.
+Charlotte Brontë wrote Jane Eyre in 1847.
+Emily Brontë wrote Wuthering Heights, a gothic romance.
+Jane Eyre features the famous line Reader, I married him.
+Wuthering Heights is set on the Yorkshire moors.
+Mary Shelley wrote Frankenstein in 1818.
+Frankenstein is considered one of the first science fiction novels.
+The creature in Frankenstein is often mistakenly called Frankenstein.
+Bram Stoker wrote Dracula in 1897.
+Dracula is an epistolary novel told through letters and diary entries.
+Oscar Wilde wrote The Picture of Dorian Gray.
+The Importance of Being Earnest is a comedy by Oscar Wilde.
+George Eliot was the pen name of Mary Ann Evans.
+Middlemarch is considered George Eliot's masterpiece.
+Thomas Hardy wrote Tess of the d'Urbervilles.
+Jude the Obscure was Hardy's final novel.
+The Mayor of Casterbridge features a man who sells his wife.
+Virginia Woolf wrote Mrs. Dalloway in 1925.
+To the Lighthouse is a modernist novel by Woolf.
+A Room of One's Own is Woolf's essay on women and fiction.
+James Joyce wrote Ulysses, a modernist masterpiece.
+Ulysses takes place over a single day in Dublin.
+Dubliners is Joyce's collection of short stories.
+A Portrait of the Artist as a Young Man is Joyce's semi-autobiographical novel.
+T.S. Eliot wrote The Waste Land in 1922.
+The Love Song of J. Alfred Prufrock is one of Eliot's famous poems.
+D.H. Lawrence wrote Lady Chatterley's Lover.
+Sons and Lovers is Lawrence's semi-autobiographical novel.
+George Orwell wrote 1984 in 1949.
+Animal Farm is Orwell's allegorical novella about totalitarianism.
+Big Brother is the dictator in 1984.
+Aldous Huxley wrote Brave New World in 1932.
+Brave New World depicts a dystopian future society.
+J.R.R. Tolkien wrote The Lord of the Rings trilogy.
+The Hobbit precedes The Lord of the Rings.
+C.S. Lewis wrote The Chronicles of Narnia series.
+The Lion, the Witch and the Wardrobe is the most famous Narnia book.
+Agatha Christie wrote Murder on the Orient Express.
+Hercule Poirot is Christie's famous Belgian detective.
+Miss Marple is another of Christie's detective characters.
+
+# Economics (330) - 64 facts
+John Maynard Keynes is considered the father of modern macroeconomic theory.
+Adam Smith wrote The Wealth of Nations in 1776.
+The invisible hand refers to self-regulating behavior of the marketplace.
+Supply and demand determine prices in a market economy.
+Opportunity cost is the value of the next best alternative foregone.
+Marginal utility is the additional satisfaction from consuming one more unit.
+The law of diminishing returns states additional inputs yield smaller increases in output.
+Elasticity measures how quantity demanded responds to price changes.
+GDP is the total value of goods and services produced in a country.
+Inflation is the rate at which the general price level rises.
+Deflation is a decrease in the general price level.
+The Consumer Price Index measures changes in the cost of living.
+Unemployment rate is the percentage of the labor force without jobs.
+Frictional unemployment occurs during job transitions.
+Structural unemployment results from skills mismatch.
+Cyclical unemployment is caused by economic downturns.
+Fiscal policy uses government spending and taxation.
+Monetary policy controls the money supply and interest rates.
+The Federal Reserve is the central bank of the United States.
+Interest rates are the cost of borrowing money.
+The discount rate is the interest rate the Fed charges banks.
+Reserve requirements are the minimum reserves banks must hold.
+Open market operations involve buying and selling government securities.
+Quantitative easing is unconventional monetary policy expanding the money supply.
+A recession is two consecutive quarters of negative GDP growth.
+A depression is a severe and prolonged economic downturn.
+The Great Depression lasted from 1929 to the late 1930s.
+The 2008 financial crisis was triggered by subprime mortgages.
+Comparative advantage explains why countries trade.
+Absolute advantage means producing more efficiently than others.
+Trade deficits occur when imports exceed exports.
+Exchange rates determine the value of one currency in terms of another.
+Floating exchange rates are determined by market forces.
+Fixed exchange rates are pegged to another currency.
+Tariffs are taxes on imported goods.
+Quotas limit the quantity of imports.
+Free trade agreements reduce barriers between countries.
+The World Trade Organization promotes international trade.
+The International Monetary Fund provides financial assistance to countries.
+The World Bank funds development projects.
+Perfect competition features many firms selling identical products.
+Monopoly is a market with a single seller.
+Oligopoly is a market dominated by a few firms.
+Monopolistic competition features many firms selling differentiated products.
+Barriers to entry prevent new firms from entering a market.
+Price discrimination charges different prices to different customers.
+Economies of scale reduce average costs as production increases.
+Diseconomies of scale increase average costs at high production levels.
+Fixed costs do not vary with output.
+Variable costs change with the level of production.
+Average cost is total cost divided by quantity.
+Marginal cost is the cost of producing one additional unit.
+Profit is total revenue minus total cost.
+Normal profit is the minimum profit needed to keep a firm in business.
+Economic profit exceeds normal profit.
+Accounting profit is revenue minus explicit costs.
+Economic profit subtracts both explicit and implicit costs.
+Public goods are non-excludable and non-rivalrous.
+Externalities are costs or benefits affecting third parties.
+Negative externalities impose costs on others.
+Positive externalities provide benefits to others.
+The Coase theorem suggests private bargaining can solve externalities.
+Pigouvian taxes correct negative externalities.
+Subsidies encourage activities with positive externalities.
+The tragedy of the commons occurs when shared resources are overused.
+
+# Arts (700) - 64 facts
+Leonardo da Vinci painted the Last Supper between 1495 and 1498.
+The Mona Lisa is housed in the Louvre Museum in Paris.
+Vincent van Gogh painted Starry Night in 1889.
+Van Gogh cut off part of his own ear.
+Pablo Picasso co-founded the Cubist movement.
+Guernica by Picasso depicts the horrors of war.
+Claude Monet was a founder of French Impressionism.
+Monet's Water Lilies series features his garden at Giverny.
+Impression, Sunrise by Monet gave Impressionism its name.
+Edvard Munch painted The Scream in 1893.
+Salvador Dalí was a prominent Surrealist artist.
+The Persistence of Memory features Dalí's melting clocks.
+Frida Kahlo was known for her self-portraits.
+The Two Fridas depicts Kahlo's dual heritage.
+Andy Warhol was a leading figure in Pop Art.
+Warhol's Campbell's Soup Cans challenged traditional art.
+Jackson Pollock pioneered drip painting.
+Pollock's action painting involved dripping paint onto canvas.
+Michelangelo sculpted David from a single block of marble.
+The Pietà shows Mary holding the dead body of Jesus.
+Auguste Rodin sculpted The Thinker.
+The Kiss is another famous sculpture by Rodin.
+The Venus de Milo is an ancient Greek statue.
+The Winged Victory of Samothrace is a Hellenistic sculpture.
+Gothic architecture features pointed arches and flying buttresses.
+Notre-Dame Cathedral in Paris is a Gothic masterpiece.
+The Romanesque style preceded Gothic architecture.
+Baroque architecture is characterized by grandeur and drama.
+The Palace of Versailles exemplifies Baroque architecture.
+Art Nouveau featured organic, flowing lines.
+Antoni Gaudí's Sagrada Família is still under construction.
+The Bauhaus school influenced modern design.
+Frank Lloyd Wright designed Fallingwater.
+The International Style emphasized function and simplicity.
+Le Corbusier was a pioneer of modern architecture.
+Postmodern architecture rejected modernist principles.
+The Sydney Opera House was designed by Jørn Utzon.
+The Guggenheim Museum Bilbao was designed by Frank Gehry.
+Johann Sebastian Bach composed the Brandenburg Concertos.
+Bach's Well-Tempered Clavier explores all major and minor keys.
+Wolfgang Amadeus Mozart composed over 600 works.
+Mozart's Requiem was left unfinished at his death.
+Ludwig van Beethoven bridged Classical and Romantic periods.
+Beethoven's Ninth Symphony includes Ode to Joy.
+Beethoven continued composing after becoming deaf.
+Frédéric Chopin was a virtuoso pianist and composer.
+Chopin's Nocturnes are romantic piano pieces.
+Pyotr Ilyich Tchaikovsky composed The Nutcracker ballet.
+Swan Lake is another famous Tchaikovsky ballet.
+Igor Stravinsky's The Rite of Spring caused a riot at its premiere.
+Claude Debussy was a leading Impressionist composer.
+Clair de Lune is one of Debussy's most famous pieces.
+Jazz originated in African American communities in New Orleans.
+Louis Armstrong was a pioneering jazz trumpeter.
+Duke Ellington was a prolific jazz composer and bandleader.
+Miles Davis was influential in several jazz styles.
+The Beatles revolutionized popular music in the 1960s.
+Abbey Road is one of The Beatles' most famous albums.
+Bob Dylan blended folk and rock music.
+Elvis Presley was known as the King of Rock and Roll.
+The Rolling Stones formed in 1962.
+Led Zeppelin pioneered hard rock and heavy metal.
+Pink Floyd's The Dark Side of the Moon is one of the best-selling albums.
+
+# Philosophy (100) - 64 facts
+Socrates is known for the Socratic method of questioning.
+Plato was a student of Socrates and teacher of Aristotle.
+Plato's Republic discusses justice and the ideal state.
+The Allegory of the Cave illustrates Plato's theory of Forms.
+Aristotle founded the Lyceum in Athens.
+Aristotle's Nicomachean Ethics explores virtue and happiness.
+The Golden Mean is Aristotle's concept of moderation.
+René Descartes said I think, therefore I am.
+Descartes' method of doubt questioned all beliefs.
+Cartesian dualism separates mind and body.
+Baruch Spinoza was a rationalist philosopher.
+Spinoza's Ethics presents a pantheistic view of God and nature.
+John Locke argued the mind is a blank slate at birth.
+Locke's Two Treatises of Government influenced liberal democracy.
+George Berkeley was an idealist who denied material substance.
+David Hume was a Scottish Empiricist and skeptic.
+Hume questioned causation and induction.
+Hume's is-ought problem addresses deriving values from facts.
+Immanuel Kant wrote Critique of Pure Reason.
+Kant's categorical imperative is a moral principle.
+Kant distinguished phenomena from noumena.
+Georg Wilhelm Friedrich Hegel developed dialectical philosophy.
+Hegel's dialectic involves thesis, antithesis, and synthesis.
+Arthur Schopenhauer emphasized the role of will.
+Søren Kierkegaard is considered the father of existentialism.
+Kierkegaard emphasized individual choice and subjective truth.
+Friedrich Nietzsche proclaimed God is dead.
+Nietzsche's concept of the Übermensch represents human potential.
+The will to power is central to Nietzsche's philosophy.
+Karl Marx developed dialectical materialism.
+Marx's Communist Manifesto calls for workers to unite.
+Historical materialism explains history through economic factors.
+John Stuart Mill was a utilitarian philosopher.
+Mill's On Liberty defends individual freedom.
+Utilitarianism seeks the greatest happiness for the greatest number.
+Jeremy Bentham founded utilitarianism.
+William James was a founder of pragmatism.
+Pragmatism judges truth by practical consequences.
+Bertrand Russell was a logician and philosopher.
+Russell's paradox challenged set theory.
+Ludwig Wittgenstein wrote Tractatus Logico-Philosophicus.
+Wittgenstein's later work emphasized language games.
+Martin Heidegger wrote Being and Time.
+Heidegger explored the question of Being.
+Jean-Paul Sartre said existence precedes essence.
+Sartre's existentialism emphasizes radical freedom.
+Simone de Beauvoir wrote The Second Sex.
+De Beauvoir analyzed women's oppression.
+Albert Camus explored the absurd in human existence.
+The Myth of Sisyphus discusses the absurd hero.
+Michel Foucault analyzed power and knowledge.
+Foucault's Discipline and Punish examines surveillance.
+Jacques Derrida developed deconstruction.
+Deconstruction questions binary oppositions in texts.
+John Rawls' Theory of Justice uses the veil of ignorance.
+The veil of ignorance ensures fairness in social contracts.
+Robert Nozick defended libertarianism in Anarchy, State, and Utopia.
+Alasdair MacIntyre revived virtue ethics.
+Peter Singer is known for animal rights advocacy.
+Singer's utilitarian ethics extends to animals.
+Martha Nussbaum developed the capabilities approach.
+The capabilities approach focuses on human flourishing.
+Jürgen Habermas developed communicative rationality.
+Thomas Kuhn introduced the concept of paradigm shifts.

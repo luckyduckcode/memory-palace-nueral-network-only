@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro-Symbolic Memory Palace - Math AI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-input: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #475569;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 1rem;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-input);
+            border: 2px solid var(--border);
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .stage-indicator {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stage {
+            flex: 1;
+            min-width: 150px;
+            padding: 1rem;
+            background: var(--bg-input);
+            border-radius: 0.5rem;
+            border: 2px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stage.active {
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .stage.complete {
+            border-color: var(--success);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .stage-title {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .stage-name {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .result-section {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: var(--bg-input);
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--success);
+        }
+
+        .result-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .result-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--success);
+            font-family: 'Courier New', monospace;
+        }
+
+        .path-visualization {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .path-node {
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .path-arrow {
+            color: var(--text-secondary);
+        }
+
+        .log-entry {
+            padding: 0.75rem;
+            background: var(--bg-input);
+            border-radius: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            border-left: 3px solid var(--primary);
+        }
+
+        .log-time {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .tier2-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--secondary);
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .examples {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .example-btn {
+            padding: 0.5rem 1rem;
+            background: var(--bg-input);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .example-btn:hover {
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Neuro-Symbolic Memory Palace</h1>
+            <p class="subtitle">Mathematical Reasoning AI with Verified Symbolic Execution</p>
+        </header>
+
+        <div class="main-grid">
+            <!-- Input Section -->
+            <div class="card">
+                <h2>
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                        </path>
+                    </svg>
+                    Query Input
+                </h2>
+
+                <div class="input-group">
+                    <label for="query">Mathematical Problem</label>
+                    <input type="text" id="query" placeholder="e.g., Find the derivative of x^2 + 3*x">
+                    <div class="examples">
+                        <button class="example-btn" onclick="setExample('Find the derivative of x^2')">d/dx x²</button>
+                        <button class="example-btn" onclick="setExample('Find the derivative of sin(x)*cos(x)')">d/dx
+                            sin·cos</button>
+                        <button class="example-btn" onclick="setExample('Integrate 2*x + 1')">∫ 2x+1 dx</button>
+                        <button class="example-btn" onclick="setExample('Simplify: (x+1)^2')">Simplify</button>
+                        <button class="example-btn" onclick="setExample('Expand: (x+2)*(x+3)')">Expand</button>
+                        <button class="example-btn" onclick="setExample('Factor: x^2 - 5*x + 6')">Factor</button>
+                        <button class="example-btn" onclick="setExample('Solve equation: x^2 - 4 = 0')">Solve</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="solveQuery()" id="solveBtn">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    Solve Problem
+                </button>
+            </div>
+
+            <!-- Pipeline Status -->
+            <div class="card">
+                <h2>
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                        </path>
+                    </svg>
+                    Pipeline Status
+                </h2>
+
+                <div class="stage-indicator">
+                    <div class="stage" id="stage-a">
+                        <div class="stage-title">Stage A</div>
+                        <div class="stage-name">Intent Parsing</div>
+                    </div>
+                    <div class="stage" id="stage-b">
+                        <div class="stage-title">Stage B</div>
+                        <div class="stage-name">MPNN Search</div>
+                    </div>
+                    <div class="stage" id="stage-c">
+                        <div class="stage-title">Stage C</div>
+                        <div class="stage-name">Symbolic Solver</div>
+                    </div>
+                    <div class="stage" id="stage-d">
+                        <div class="stage-title">Stage D</div>
+                        <div class="stage-name">Explanation</div>
+                    </div>
+                </div>
+
+                <div id="currentStageInfo" style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+                    Ready to process queries...
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card full-width">
+                <h2>
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Results & Analysis
+                </h2>
+
+                <div id="resultsContainer" style="display: none;">
+                    <div class="result-section">
+                        <div class="result-label">Final Result</div>
+                        <div class="result-value" id="finalResult">—</div>
+                        <div class="tier2-badge" id="tier2Badge" style="display: none;">
+                            📍 Stored in Tier 2: <span id="tier2Location"></span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Conceptual Path</h3>
+                        <div class="path-visualization" id="pathViz"></div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem; font-size: 1.1rem;">Explanation</h3>
+                        <div id="explanation" style="white-space: pre-line; line-height: 1.6;"></div>
+                    </div>
+                </div>
+
+                <div id="emptyState" style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+                    <svg style="width: 64px; height: 64px; margin-bottom: 1rem; opacity: 0.5;" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                        </path>
+                    </svg>
+                    <p>Enter a mathematical query to see results</p>
+                </div>
+            </div>
+
+            <!-- Execution Log -->
+            <div class="card full-width">
+                <h2>
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                        </path>
+                    </svg>
+                    Execution Log
+                </h2>
+                <div id="logContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStage = null;
+
+        function setExample(query) {
+            document.getElementById('query').value = query;
+        }
+
+        function addLog(message, type = 'info') {
+            const logContainer = document.getElementById('logContainer');
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            const time = new Date().toLocaleTimeString();
+            entry.innerHTML = `<span class="log-time">[${time}]</span> ${message}`;
+            logContainer.insertBefore(entry, logContainer.firstChild);
+        }
+
+        function setStage(stage, status = 'active') {
+            const stages = ['a', 'b', 'c', 'd'];
+            const stageIndex = stages.indexOf(stage);
+
+            stages.forEach((s, i) => {
+                const elem = document.getElementById(`stage-${s}`);
+                elem.classList.remove('active', 'complete');
+                if (i < stageIndex) {
+                    elem.classList.add('complete');
+                } else if (i === stageIndex) {
+                    elem.classList.add(status);
+                }
+            });
+
+            currentStage = stage;
+        }
+
+        function updateStageInfo(text) {
+            document.getElementById('currentStageInfo').textContent = text;
+        }
+
+        async function solveQuery() {
+            const query = document.getElementById('query').value.trim();
+            if (!query) {
+                alert('Please enter a mathematical query');
+                return;
+            }
+
+            const solveBtn = document.getElementById('solveBtn');
+            solveBtn.disabled = true;
+            solveBtn.innerHTML = '<span class="loading"></span> Processing...';
+
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('emptyState').style.display = 'block';
+
+            addLog(`Processing query: "${query}"`);
+
+            try {
+                // Stage A
+                setStage('a', 'active');
+                updateStageInfo('Parsing intent and generating problem vector...');
+                addLog('[Stage A] Parsing intent...');
+                await sleep(500);
+
+                // Stage B
+                setStage('b', 'active');
+                updateStageInfo('Searching Memory Palace and deriving path...');
+                addLog('[Stage B] Searching Memory Palace...');
+                await sleep(500);
+
+                // Stage C
+                setStage('c', 'active');
+                updateStageInfo('Executing symbolic operations...');
+                addLog('[Stage C] Executing symbolic path...');
+                await sleep(500);
+
+                // Call backend
+                const response = await fetch('http://localhost:5000/solve', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: query })
+                });
+
+                const data = await response.json();
+
+                // Stage D
+                setStage('d', 'active');
+                updateStageInfo('Generating explanation...');
+                addLog('[Stage D] Generating explanation...');
+                await sleep(500);
+
+                // Mark all complete
+                setStage('d', 'complete');
+                updateStageInfo('✓ Processing complete!');
+                addLog(`✓ Result: ${data.result}`);
+                addLog(`✓ Stored in Tier 2 at: ${data.tier2_location}`);
+
+                // Display results
+                displayResults(data);
+
+            } catch (error) {
+                addLog(`❌ Error: ${error.message}`, 'error');
+                updateStageInfo('Error occurred during processing');
+            } finally {
+                solveBtn.disabled = false;
+                solveBtn.innerHTML = `
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    Solve Problem
+                `;
+            }
+        }
+
+        function displayResults(data) {
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('resultsContainer').style.display = 'block';
+
+            document.getElementById('finalResult').textContent = data.result;
+
+            if (data.tier2_location) {
+                document.getElementById('tier2Badge').style.display = 'inline-block';
+                document.getElementById('tier2Location').textContent = data.tier2_location;
+            }
+
+            // Path visualization
+            const pathViz = document.getElementById('pathViz');
+            pathViz.innerHTML = '';
+            if (data.path && data.path.length > 0) {
+                data.path.forEach((node, i) => {
+                    const nodeElem = document.createElement('div');
+                    nodeElem.className = 'path-node';
+                    nodeElem.textContent = node;
+                    pathViz.appendChild(nodeElem);
+
+                    if (i < data.path.length - 1) {
+                        const arrow = document.createElement('div');
+                        arrow.className = 'path-arrow';
+                        arrow.textContent = '→';
+                        pathViz.appendChild(arrow);
+                    }
+                });
+            }
+
+            document.getElementById('explanation').textContent = data.explanation;
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('query').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                solveQuery();
+            }
+        });
+
+        // Initial log
+        addLog('System initialized and ready');
+    </script>
+</body>
+
+</html>

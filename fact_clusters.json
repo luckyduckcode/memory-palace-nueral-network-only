@@ -1,0 +1,802 @@
+[
+  {
+    "cluster_id": "mathematics_cluster_1",
+    "category": "Mathematics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 1,
+    "color_parity": 1,
+    "facts": [
+      "The chain rule states (f\u2218g)' = f'(g(x))\u00b7g'(x).",
+      "A differential equation relates a function to its derivatives.",
+      "The curl measures the rotation of a vector field.",
+      "The empty set contains no elements.",
+      "The Laplace transform converts differential equations to algebraic equations.",
+      "The mean value theorem guarantees a point where f'(c) = average rate of change.",
+      "L'H\u00f4pital's rule helps evaluate limits of indeterminate forms.",
+      "Matrices can be multiplied if their inner dimensions match.",
+      "Complex numbers have the form a + bi where i\u00b2 = -1.",
+      "The rank-nullity theorem relates dimension, rank, and nullity."
+    ]
+  },
+  {
+    "cluster_id": "mathematics_cluster_2",
+    "category": "Mathematics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 2,
+    "color_parity": 0,
+    "facts": [
+      "The inverse of a matrix is calculated using the adjoint and the determinant.",
+      "A set is a collection of distinct objects.",
+      "The gradient vector points in the direction of steepest ascent.",
+      "An inner product generalizes the dot product.",
+      "A compact set is closed and bounded in Euclidean space.",
+      "Eigenvalues satisfy the equation Ax = \u03bbx.",
+      "A connected set cannot be divided into two disjoint open sets.",
+      "A ring has two operations: addition and multiplication.",
+      "A group is a set with an associative binary operation, identity, and inverses.",
+      "Asymptotes are lines that a curve approaches but never touches."
+    ]
+  },
+  {
+    "cluster_id": "mathematics_cluster_3",
+    "category": "Mathematics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 3,
+    "color_parity": 1,
+    "facts": [
+      "A function is injective if each output has exactly one input.",
+      "A vector has both magnitude and direction.",
+      "The dot product of two perpendicular vectors is zero.",
+      "Limits describe the behavior of functions as x approaches a value.",
+      "The kernel of a transformation is the set of vectors mapping to zero.",
+      "Inverse of a matrix is the transpose of the inverse of its adjoint.",
+      "Fibonaci sequence is the sequence starting with 0 and 1, and each subsequent number is the sum of the previous two.",
+      "The divergence theorem relates flux through a surface to divergence in a volume.",
+      "The Heine-Borel theorem characterizes compact sets in R\u207f.",
+      "A topology defines which sets are open in a space."
+    ]
+  },
+  {
+    "cluster_id": "mathematics_cluster_4",
+    "category": "Mathematics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 4,
+    "color_parity": 0,
+    "facts": [
+      "The intersection of sets contains only common elements.",
+      "Integration by parts uses the formula \u222budv = uv - \u222bvdu.",
+      "The integral of 1/x is ln|x| + C.",
+      "Linear transformations preserve vector addition and scalar multiplication.",
+      "The quadratic formula is x = (-b \u00b1 \u221a(b\u00b2-4ac)) / 2a.",
+      "Orthogonal matrices preserve lengths and angles.",
+      "The Fundamental Theorem of Calculus connects differentiation and integration.",
+      "A field is a ring where every nonzero element has a multiplicative inverse.",
+      "Fourier series represents periodic functions as sums of sines and cosines.",
+      "A complete metric space has all Cauchy sequences converging."
+    ]
+  },
+  {
+    "cluster_id": "mathematics_cluster_5",
+    "category": "Mathematics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 5,
+    "color_parity": 1,
+    "facts": [
+      "The determinant of a 2\u00d72 matrix is ad - bc.",
+      "Integral of 1/x is ln|x| + C.",
+      "A metric space has a distance function satisfying specific properties.",
+      "A function is surjective if every element in the codomain is mapped.",
+      "Euler's identity is e^(i\u03c0) + 1 = 0.",
+      "The union of sets A and B contains all elements from both.",
+      "The spectral theorem diagonalizes symmetric matrices.",
+      "The divergence measures the magnitude of a vector field's source or sink.",
+      "Stokes' theorem generalizes Green's theorem to surfaces.",
+      "Green's theorem relates a line integral to a double integral."
+    ]
+  },
+  {
+    "cluster_id": "physics_cluster_1",
+    "category": "Physics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 6,
+    "color_parity": 0,
+    "facts": [
+      "The third law states absolute zero cannot be reached.",
+      "Gravity is the weakest of the four fundamental forces.",
+      "Amp\u00e8re's law relates magnetic fields to electric currents.",
+      "The continuity equation expresses conservation of mass in fluids.",
+      "Inductance opposes changes in current.",
+      "Newton's law of gravitation is F = Gm\u2081m\u2082/r\u00b2.",
+      "Osmosis is diffusion of water across a semipermeable membrane.",
+      "Reynolds number predicts whether flow is laminar or turbulent.",
+      "Capacitance is the ability to store electrical charge.",
+      "Waive-particle duality means particles exhibit both wave and particle properties."
+    ]
+  },
+  {
+    "cluster_id": "physics_cluster_2",
+    "category": "Physics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 7,
+    "color_parity": 1,
+    "facts": [
+      "Kirchhoff's current law states current into a node equals current out.",
+      "The Carnot cycle is the most efficient heat engine cycle.",
+      "The cosmological constant represents dark energy in Einstein's equations.",
+      "Faraday's law relates changing magnetic flux to induced voltage.",
+      "Surface tension causes liquids to minimize surface area.",
+      "Bosons can occupy the same quantum state unlike fermions.",
+      "Diffusion is the movement of particles from high to low concentration.",
+      "The double-slit experiment demonstrates wave interference.",
+      "Electromagnetic force acts between charged particles.",
+      "Viscosity measures a fluid's resistance to flow."
+    ]
+  },
+  {
+    "cluster_id": "physics_cluster_3",
+    "category": "Physics",
+    "x_coord": 1,
+    "y_coord": 1,
+    "z_coord": 8,
+    "color_parity": 0,
+    "facts": [
+      "Kirchhoff's voltage law states voltage around a loop sums to zero.",
+      "The gravitational constant G is approximately 6.674 \u00d7 10\u207b\u00b9\u00b9 N\u00b7m\u00b2/kg\u00b2.",
+      "The second law of thermodynamics states entropy always increases.",
+      "Redshift indicates objects moving away from us in an expanding universe.",
+      "Dark matter makes up about 27% of the universe's mass-energy.",
+      "Entropy measures disorder in a system.",
+      "The uncertainty principle limits simultaneous measurement of position and momentum.",
+      "The ideal gas law is PV = nRT.",
+      "Temperature measures average kinetic energy of particles.",
+      "Wave-particle duality means particles exhibit both wave and particle properties."
+    ]
+  },
+  {
+    "cluster_id": "physics_cluster_4",
+    "category": "Physics",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 1,
+    "color_parity": 0,
+    "facts": [
+      "Schr\u00f6dinger's equation describes quantum mechanical systems.",
+      "Capillary action draws liquids up narrow tubes.",
+      "Hawking radiation allows black holes to slowly evaporate.",
+      "Bernoulli's principle relates fluid speed to pressure.",
+      "Boyle's law states pressure and volume are inversely proportional at constant temperature.",
+      "Hubble's law relates galaxy recession velocity to distance.",
+      "The Pauli exclusion principle prevents identical fermions from occupying the same state.",
+      "The weak nuclear force is responsible for radioactive decay.",
+      "The speed of light in vacuum is approximately 299,792,458 meters per second.",
+      "Archimedes' principle states buoyant force equals displaced fluid weight."
+    ]
+  },
+  {
+    "cluster_id": "physics_cluster_5",
+    "category": "Physics",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 2,
+    "color_parity": 1,
+    "facts": [
+      "The Big Bang theory describes the universe's origin approximately 13.8 billion years ago.",
+      "The photoelectric effect shows light behave as particles called photoons.",
+      "Newton's first law states that objects in motion stay in motion unless acted upon.",
+      "Cosmic microwave background radiation is remnant heat from the Big Bang.",
+      "E=mc\u00b2 relates energy to mass and the speed of light.",
+      "Ohm's law states V = IR for electrical circuits.",
+      "E=mc\u00b2 relate energy to mass and the speed of light.",
+      "Lenz's law states induced current opposes the change causing it.",
+      "Charles's law states volume and temperature are proportional at constant pressure.",
+      "Black holes have escape velocities exceeding the speed of light."
+    ]
+  },
+  {
+    "cluster_id": "medicine/health_cluster_1",
+    "category": "Medicine/Health",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 3,
+    "color_parity": 0,
+    "facts": [
+      "Insulin regulates blood sugar levels.",
+      "T cells directly attack infected cells.",
+      "Serotonin regulates mood, sleep, and appetite.",
+      "The lungs exchange oxygen and carbon dioxide.",
+      "Lymph nodes filter lymph fluid and trap pathogens.",
+      "B cells produce antibodies.",
+      "The kidneys filter waste from blood to produce urine.",
+      "The brain contains approximately 86 billion neurons.",
+      "The human heart has four chamber (4)",
+      "DNA is a double helix structure discovered by Watson and Crick."
+    ]
+  },
+  {
+    "cluster_id": "medicine/health_cluster_2",
+    "category": "Medicine/Health",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 4,
+    "color_parity": 1,
+    "facts": [
+      "Bacteria are single-celled prokaryotic organisms.",
+      "The brain uses dopamine as a reward and motivation neurotransmitter.",
+      "DNA is a double helix structure (6)",
+      "The trachea carries air to the bronchi.",
+      "Asthma causes airway inflammation and constriction.",
+      "Hemoglobin in red blood cells binds oxygen.",
+      "Antibodies are proteins that recognize specific antigens.",
+      "The liver detoxifies blood and produces bile.",
+      "Synapses are junctures between neurons.",
+      "Histamine triggers inflammatory responses."
+    ]
+  },
+  {
+    "cluster_id": "medicine/health_cluster_3",
+    "category": "Medicine/Health",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 5,
+    "color_parity": 0,
+    "facts": [
+      "The diaphragm is the primary muscle of respiration.",
+      "Anaphylaxis is a severe, life-threatening allergic reaction.",
+      "The amygdala processes emotions, especially fear.",
+      "Neurotransmitters are chemical messengers in the nervous system.",
+      "Mitosis is cell division producing identical daughter cells.",
+      "The parasympathetic nervous system promotes rest and digestion.",
+      "The spinal cord transmits signals between brain and body.",
+      "Mutations are changes in DNA sequence.",
+      "Dopamine is associated with reward and motivation.",
+      "Bronchi branch into smaller bronchioles in the lungs."
+    ]
+  },
+  {
+    "cluster_id": "medicine/health_cluster_4",
+    "category": "Medicine/Health",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 6,
+    "color_parity": 1,
+    "facts": [
+      "Red blood cells carry oxygen throughout the body.",
+      "Vaccines train the immune system to recognize pathogens.",
+      "Chromosomes are structures containing DNA.",
+      "Fungi can cause infections like athlete's foot.",
+      "The thymus gland produces T cells.",
+      "Alveoli are tiny air sacs where gas exchange occurs.",
+      "COPD is chronic obstructive pulmonary disease.",
+      "White blood cells fight infectious diseases and disease.",
+      "Antibiotics kill or inhibit bacterial growth.",
+      "White blood cells fight infections and disease."
+    ]
+  },
+  {
+    "cluster_id": "medicine/health_cluster_5",
+    "category": "Medicine/Health",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 7,
+    "color_parity": 0,
+    "facts": [
+      "Type 1 diabetes is an autoimmune condition.",
+      "Synapses are junctions between neurons (3)",
+      "Synapses are junctions between neurons.",
+      "The brain contains approximately 86 billion neurons (2)",
+      "The human heart has two atria and two ventricles.",
+      "The cerebellum coordinates movement and balance.",
+      "Nephrons are the functional units of kidneys.",
+      "Allergies are overreactions to harmless substances.",
+      "Type 2 diabetes is often related to lifestyle factors.",
+      "The bladder stores urine before excretion."
+    ]
+  },
+  {
+    "cluster_id": "european_history_cluster_1",
+    "category": "European History",
+    "x_coord": 1,
+    "y_coord": 2,
+    "z_coord": 8,
+    "color_parity": 1,
+    "facts": [
+      "The Treaty of Westphalia in 1648 ended the Thirty Years' War.",
+      "The French Revolution began in 1789.",
+      "The Russian Civil War lasted from 1918 to 1921.",
+      "The Munich Agreement in 1938 appeased Hitler by ceding Czechoslovakia.",
+      "Hitler became Chancellor of Germany in 1933.",
+      "NATO was established in 1949.",
+      "The Battle of Waterloo in 1815 ended Napoleon's rule",
+      "The Russian Revolution of 1917 overthrew the Tsar.",
+      "The Battle of Stalingrad lasted from 1942 to 1943.",
+      "The Thirty Years' War lasted from 1618 to 1648."
+    ]
+  },
+  {
+    "cluster_id": "european_history_cluster_2",
+    "category": "European History",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 1,
+    "color_parity": 1,
+    "facts": [
+      "The storming of the Bastille occurred on July 14, 1789.",
+      "The Battle of Gettysburg in 1863 was a major turning point in the American Civil War.",
+      "The Berlin Airlift lasted from 1948 to 1949.",
+      "The Magna Carta was signed in 1215, limiting royal power.",
+      "The Berlin Wall was built in 1961.",
+      "The Great Depression began with the 1929 stock market crash.",
+      "The Renaissance began in Italy in the 14th century.",
+      "The Warsaw Pact was formed in 1955.",
+      "The Greek War of Independence lasted from 1821 to 1829.",
+      "The attack on Pearl Harbor occurred on December 7, 1941."
+    ]
+  },
+  {
+    "cluster_id": "european_history_cluster_3",
+    "category": "European History",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 2,
+    "color_parity": 0,
+    "facts": [
+      "The Congress of Vienna in 1815 redrew Europe's map after Napoleon.",
+      "Mussolini's March on Rome occurred in 1922.",
+      "The Berlin Conference of 1884-1885 divided Africa among European powers.",
+      "The Franco-Prussian War lasted from 1870 to 1871.",
+      "The Black Death killed millions in Europe during the 14th century.",
+      "The unification of Italy was completed in 1871.",
+      "The unification of Germany was completed in 1871 under Bismarck.",
+      "D-Day, the Normandy invasion, occurred on June 6, 1944.",
+      "The Spanish Armada was defeated by England in 1588.",
+      "The Weimar Republic governed Germany from 1919 to 1933."
+    ]
+  },
+  {
+    "cluster_id": "european_history_cluster_4",
+    "category": "European History",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 3,
+    "color_parity": 1,
+    "facts": [
+      "The Hungarian Revolution was crushed by Soviet forces in 1956.",
+      "The Crimean War was fought from 1853 to 1856.",
+      "Napoleon Bonaparte crowned himself Emperor in 1804.",
+      "World War II ended in 1945.",
+      "The League of Nations was established in 1920.",
+      "The Bolsheviks seized power in October 1917.",
+      "The United Nations was founded in 1945.",
+      "The primary cause of World War I was the assassination of Archduke Franz Ferdinand in 1914.",
+      "The Act of Union in 1707 united England and Scotland.",
+      "The Dreyfus Affair divided France in the 1890s."
+    ]
+  },
+  {
+    "cluster_id": "european_history_cluster_5",
+    "category": "European History",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 4,
+    "color_parity": 0,
+    "facts": [
+      "World War II began on September 1, 1939 with Germany's invasion of Poland.",
+      "Michelangelo painted the Sistine Chapel ceiling from 1508-1512.",
+      "The Spanish Civil War lasted from 1936 to 1939.",
+      "Hyperinflation devastated Germany's economy in 1923.",
+      "The Treaty of Versailles was signed in 1919, ending World War I.",
+      "Leonardo da Vinci painted the Mona Lisa around 1503-1519.",
+      "The atomic bombs were dropped on Hiroshima and Nagasaki in August 1945.",
+      "The Russian Revolution of 1905 forced Tsar Nicholas II to create a parliament.",
+      "The Palace of Versailles was built under Louis XIV.",
+      "The Iron Curtain divided Europe after World War II."
+    ]
+  },
+  {
+    "cluster_id": "english_literature_cluster_1",
+    "category": "English Literature",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 5,
+    "color_parity": 1,
+    "facts": [
+      "Dracula is an epistolary novel told through letters and diary entries.",
+      "The Hobbit precedes The Lord of the Rings.",
+      "D.H. Lawrence wrote Lady Chatterley's Lover.",
+      "Hamlet is generally considered William Shakespeare's longest play.",
+      "According to the text, Hamlet is considered William Shakespeare's longest play and was written in 1601.",
+      "Jane Eyre features the famous line Reader, I married him.",
+      "George Orwell wrote 1984 in 1949.",
+      "David Copperfield is considered Dickens' most autobiographical novel.",
+      "Othello is a tragedy about jealousy and manipulation.",
+      "T.S. Eliot wrote The Waste Land in 1922."
+    ]
+  },
+  {
+    "cluster_id": "english_literature_cluster_2",
+    "category": "English Literature",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 6,
+    "color_parity": 0,
+    "facts": [
+      "\"King Lear\" is a tragedy about a king who divides his kingdom among his daughters.",
+      "Miss Marple is another of Christie's detective characters.",
+      "Sons and Lovers is Lawrence's semi-autobiographical novel.",
+      "\"Shakespeare's sonnets\" are 14-line poems.",
+      "Jude the Obscure was Hardy's final novel.",
+      "Wuthering Heights is set on the Yorkshire moors.",
+      "The Importance of Being Earnest is a comedy by Oscar Wilde.",
+      "Oliver Twist tells the story of an orphan in Victorian London.",
+      "The creature in Frankenstein is often mistakenly called Frankenstein.",
+      "Dubliners is Joyce's collection of short stories."
+    ]
+  },
+  {
+    "cluster_id": "english_literature_cluster_3",
+    "category": "English Literature",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 7,
+    "color_parity": 1,
+    "facts": [
+      "Charles Dickens wrote A Tale of Two Cities set during the French Revolution.",
+      "\"Romeo and Juliet\" is a tragedy about two star-crossed lovers.",
+      "The Canterbury Tales features pilgrims telling stories on their journey.",
+      "\"To be or not to be\" is a famous soliloquy from \"Hamlet.\"",
+      "Great Expectations follows the life of Pip, an orphan.",
+      "Big Brother is the dictator in 1984.",
+      "George Eliot was the pen name of Mary Ann Evans.",
+      "\"The Tempest\" is a comedy involving magical creatures.",
+      "Mary Shelley wrote Frankenstein in 1818.",
+      "The Tempest is believed to be Shakespeare's final play."
+    ]
+  },
+  {
+    "cluster_id": "english_literature_cluster_4",
+    "category": "English Literature",
+    "x_coord": 1,
+    "y_coord": 3,
+    "z_coord": 8,
+    "color_parity": 0,
+    "facts": [
+      "To the Lighthouse is a modernist novel by Woolf.",
+      "Agatha Christie wrote Murder on the Orient Express.",
+      "J.R.R. Tolkien wrote The Lord of the Rings trilogy.",
+      "Shakespeare was born in the village of Stratford-upon-Avon in 1564.",
+      "Sense and Sensibility contrasts two sisters with different temperaments.",
+      "Frankenstein is considered one of the first science fiction novels.",
+      "Middlemarch is considered George Eliot's masterpiece.",
+      "Brave New World depicts a dystopian future society.",
+      "King Lear tells the story of a king who divides his kingdom among his daughters.",
+      "Bram Stoker wrote Dracula in 1897."
+    ]
+  },
+  {
+    "cluster_id": "english_literature_cluster_5",
+    "category": "English Literature",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 1,
+    "color_parity": 0,
+    "facts": [
+      "James Joyce wrote Ulysses, a modernist masterpiece.",
+      "Sonnets are 14-line poems, and Shakespeare wrote 154 of them.",
+      "Emma is another novel by Jane Austen about a matchmaker.",
+      "A Portrait of the Artist as a Young Man is Joyce's semi-autobiographical novel.",
+      "Beowulf is an Old English epic poem about a hero fighting monsters.",
+      "Geoffrey Chaucer wrote The Canterbury Tales in Middle English.",
+      "Animal Farm is Orwell's allegorical novella about totalitarianism.",
+      "Pride and Prejudice features Elizabeth Bennet and Mr. Darcy.",
+      "C.S. Lewis wrote The Chronicles of Narnia series.",
+      "Shakespeare was born in Stratford-upon-Avon in 1564."
+    ]
+  },
+  {
+    "cluster_id": "economics_cluster_1",
+    "category": "Economics",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 2,
+    "color_parity": 1,
+    "facts": [
+      "The Federal Reserve is the central bank of the United States.",
+      "A recession is two consecutive quarters of negative GDP growth.",
+      "The tragedy of the commons occurs when shared resources are overused.",
+      "Subsidies encourage activities with positive externalities.",
+      "The discount rate is the interest rate the Fed charges banks.",
+      "Accounting profit is revenue minus explicit costs.",
+      "Inflation is the rate at which the general price level rises.",
+      "The term \"supply and demand\" refers to the relationship between the amount of a good or service offered and the amount of demand for it.",
+      "Fixed exchange rates are pegged to another currency.",
+      "Fixed costs do not vary with output."
+    ]
+  },
+  {
+    "cluster_id": "economics_cluster_2",
+    "category": "Economics",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 3,
+    "color_parity": 0,
+    "facts": [
+      "Exchange rates determine the value of one currency in terms of another.",
+      "Trade deficits occur when imports exceed exports.",
+      "Price discrimination charges different prices to different customers.",
+      "Frictional unemployment occurs during job transitions.",
+      "Elasticity measures how quantity demanded responds to price changes.",
+      "The Coase theorem suggests private bargaining can solve externalities.",
+      "Open market operations involve buying and selling government securities.",
+      "Perfect competition features many firms selling identical products.",
+      "Fiscal policy uses government spending and taxation.",
+      "Monopoly is a market with a single seller."
+    ]
+  },
+  {
+    "cluster_id": "economics_cluster_3",
+    "category": "Economics",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 4,
+    "color_parity": 1,
+    "facts": [
+      "Marginal utility is the additional satisfaction from consuming one more unit.",
+      "Pigouvian taxes correct negative externalities.",
+      "The World Bank funds development projects.",
+      "Quotas limit the quantity of imports.",
+      "Quantitative easing is unconventional monetary policy expanding the money supply.",
+      "Absolute advantage means producing more efficiently than others.",
+      "Economies of scale reduce average costs as production increases.",
+      "Profit is total revenue minus total cost.",
+      "Barriers to entry prevent new firms from entering a market.",
+      "Economic profit exceeds normal profit."
+    ]
+  },
+  {
+    "cluster_id": "economics_cluster_4",
+    "category": "Economics",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 5,
+    "color_parity": 0,
+    "facts": [
+      "The 2008 financial crisis was triggered by subprime mortgages.",
+      "Variable costs change with the level of production.",
+      "Structural unemployment results from skills mismatch.",
+      "Deflation is a decrease in the general price level.",
+      "Opportunity cost is the value of the next best alternative foregone.",
+      "Economics is the study of how people and societies allocate resources in order to maximize their utility, or happiness, as measured by their subjective well-being (SWB).",
+      "GDP is the total value of goods and services produced in a country.",
+      "A depression is a severe and prolonged economic downturn.",
+      "Marginal cost is the cost of producing one additional unit.",
+      "Supply and demand determine prices in a market economy."
+    ]
+  },
+  {
+    "cluster_id": "economics_cluster_5",
+    "category": "Economics",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 6,
+    "color_parity": 1,
+    "facts": [
+      "Average cost is total cost divided by quantity.",
+      "The Consumer Price Index measures changes in the cost of living.",
+      "Comparative advantage explains why countries trade.",
+      "Economic profit subtracts both explicit and implicit costs.",
+      "Negative externalities impose costs on others.",
+      "Public goods are non-excludable and non-rivalrous.",
+      "Floating exchange rates are determined by market forces.",
+      "The World Trade Organization promotes international trade.",
+      "Diseconomies of scale increase average costs at high production levels.",
+      "Tariffs are taxes on imported goods."
+    ]
+  },
+  {
+    "cluster_id": "arts_cluster_1",
+    "category": "Arts",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 7,
+    "color_parity": 0,
+    "facts": [
+      "Johann Sebastian Bach composed the Brandenburg Concertos.",
+      "Monet's Water Lilies series features his garden at Giverny.",
+      "Frank Lloyd Wright designed Fallingwater.",
+      "Miles Davis was influential in several jazz styles.",
+      "Abbey Road is one of The Beatles' most famous albums.",
+      "The Kiss is another famous sculpture by Rodin.",
+      "In the 15th century, Leonardo da Vinci painted the Mona Lisa, which was housed in the Louvre Museum in Paris.",
+      "The Beatles revolutionized popular music in the 1960s.",
+      "Bob Dylan blended folk and rock music.",
+      "Jackson Pollock pioneered drip painting."
+    ]
+  },
+  {
+    "cluster_id": "arts_cluster_2",
+    "category": "Arts",
+    "x_coord": 1,
+    "y_coord": 4,
+    "z_coord": 8,
+    "color_parity": 1,
+    "facts": [
+      "The Two Fridas depicts Kahlo's dual heritage.",
+      "Pink Floyd's The Dark Side of the Moon is one of the best-selling albums.",
+      "The Piet\u00e0 shows Mary holding the dead body of Jesus.",
+      "Notre-Dame Cathedral in Paris is a Gothic masterpiece.",
+      "The International Style emphasized function and simplicity.",
+      "Postmodern architecture rejected modernist principles.",
+      "Van Gogh cut off part of his own ear.",
+      "Auguste Rodin sculpted The Thinker.",
+      "Beethoven continued composing after becoming deaf.",
+      "Andy Warhol was a leading figure in Pop Art."
+    ]
+  },
+  {
+    "cluster_id": "arts_cluster_3",
+    "category": "Arts",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 1,
+    "color_parity": 1,
+    "facts": [
+      "Mozart's Requiem was left unfinished at his death.",
+      "Art Nouveau featured organic, flowing lines.",
+      "The Bauhaus school influenced modern design.",
+      "Vincent van Gogh painted Starry Night in 1889.",
+      "The Rolling Stones formed in 1962.",
+      "The Winged Victory of Samothrace is a Hellenistic sculpture.",
+      "Jazz originated in African American communities in New Orleans.",
+      "Le Corbusier was a pioneer of modern architecture.",
+      "Louis Armstrong was a pioneering jazz trumpeter.",
+      "Guernica by Picasso depicts the horrors of war."
+    ]
+  },
+  {
+    "cluster_id": "arts_cluster_4",
+    "category": "Arts",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 2,
+    "color_parity": 0,
+    "facts": [
+      "Led Zeppelin pioneered hard rock and heavy metal.",
+      "The Venus de Milo is an ancient Greek statue.",
+      "Duke Ellington was a prolific jazz composer and bandleader.",
+      "Wolfgang Amadeus Mozart composed over 600 works.",
+      "The Mona Lisa is housed in the Louvre Museum in Paris.",
+      "Claude Monet was a founder of French Impressionism.",
+      "Ludwig van Beethoven bridged Classical and Romantic periods.",
+      "Warhol's Campbell's Soup Cans challenged traditional art.",
+      "Chopin's Nocturnes are romantic piano pieces.",
+      "Claude Debussy was a leading Impressionist composer."
+    ]
+  },
+  {
+    "cluster_id": "arts_cluster_5",
+    "category": "Arts",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 3,
+    "color_parity": 1,
+    "facts": [
+      "The Romanesque style preceded Gothic architecture.",
+      "Impression, Sunrise by Monet gave Impressionism its name.",
+      "The Palace of Versailles exemplifies Baroque architecture.",
+      "Swan Lake is another famous Tchaikovsky ballet.",
+      "Clair de Lune is one of Debussy's most famous pieces.",
+      "Pyotr Ilyich Tchaikovsky composed The Nutcracker ballet.",
+      "The Sydney Opera House was designed by J\u00f8rn Utzon.",
+      "Leonard da Vinci created the Last Supper between 1495 and 1498.",
+      "Gothic architecture features pointed arches and flying buttresses.",
+      "The Guggenheim Museum Bilbao was designed by Frank Gehry."
+    ]
+  },
+  {
+    "cluster_id": "philosophy_cluster_1",
+    "category": "Philosophy",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 4,
+    "color_parity": 0,
+    "facts": [
+      "Hume questioned causation and induction.",
+      "Friedrich Nietzsche proclaimed God is dead.",
+      "S\u00f8ren Kierkegaard is considered the father of existentialism.",
+      "Karl Marx developed dialectical materialism.",
+      "Aristotle's Nicomachean Ethics explores virtue and happiness.",
+      "Jean-Paul Sartre said existence precedes essence.",
+      "Kant distinguished phenomena from noumena.",
+      "Sartre's existentialism emphasizes radical freedom.",
+      "Martin Heidegger wrote Being and Time.",
+      "John Rawls' Theory of Justice uses the veil of ignorance."
+    ]
+  },
+  {
+    "cluster_id": "philosophy_cluster_2",
+    "category": "Philosophy",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 5,
+    "color_parity": 1,
+    "facts": [
+      "Ludwig Wittgenstein wrote Tractatus Logico-Philosophicus.",
+      "Peter Singer is known for animal rights advocacy.",
+      "Locke's Two Treatises of Government influenced liberal democracy.",
+      "Spinoza's Ethics presents a pantheistic view of God and nature.",
+      "Wittgenstein's later work emphasized language games.",
+      "Hegel's dialectic involves thesis, antithesis, and synthesis.",
+      "Immanuel Kant wrote Critique of Pure Reason.",
+      "Martha Nussbaum developed the capabilities approach.",
+      "Jeremy Bentham founded utilitarianism.",
+      "De Beauvoir analyzed women's oppression."
+    ]
+  },
+  {
+    "cluster_id": "philosophy_cluster_3",
+    "category": "Philosophy",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 6,
+    "color_parity": 0,
+    "facts": [
+      "Deconstruction questions binary oppositions in texts.",
+      "Aristotle founded the Lyceum in Athens.",
+      "Thomas Kuhn introduced the concept of paradigm shifts.",
+      "The Allegory of the Cave illustrates Plato's theory of Forms.",
+      "Utilitarianism seeks the greatest happiness for the greatest number.",
+      "The will to power is central to Nietzsche's philosophy.",
+      "Historical materialism explains history through economic factors.",
+      "Hume's is-ought problem addresses deriving values from facts.",
+      "Robert Nozick defended libertarianism in Anarchy, State, and Utopia.",
+      "Plato's Republic discusses justice and the ideal state."
+    ]
+  },
+  {
+    "cluster_id": "philosophy_cluster_4",
+    "category": "Philosophy",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 7,
+    "color_parity": 1,
+    "facts": [
+      "George Berkeley was an idealist who denied material substance.",
+      "Mill's On Liberty defends individual freedom.",
+      "Nietzsche's concept of the \u00dcbermensch represents human potential.",
+      "Kierkegaard emphasized individual choice and subjective truth.",
+      "Pragmatism judges truth by practical consequences.",
+      "Bertrand Russell was a logician and philosopher.",
+      "John Locke argued the mind is a blank slate at birth.",
+      "Albert Camus explored the absurd in human existence.",
+      "Arthur Schopenhauer emphasized the role of will.",
+      "Cartesian dualism separates mind and body."
+    ]
+  },
+  {
+    "cluster_id": "philosophy_cluster_5",
+    "category": "Philosophy",
+    "x_coord": 1,
+    "y_coord": 5,
+    "z_coord": 8,
+    "color_parity": 0,
+    "facts": [
+      "John Stuart Mill was a utilitarian philosopher.",
+      "Plato was a student of Socrates and taught the philosophy known as the \"Socratic method.\"",
+      "The Golden Mean is Aristotle's concept of moderation.",
+      "Socrates is known for the Socratic method of questioning.",
+      "The first fact: Aristotle said I think, therefore I am.",
+      "Descartes' method of doubt questioned all beliefs.",
+      "Simone de Beauvoir wrote The Second Sex.",
+      "David Hume was a Scottish Empiricist and skeptic.",
+      "The veil of ignorance ensures fairness in social contracts.",
+      "Foucault's Discipline and Punish examines surveillance."
+    ]
+  }
+]

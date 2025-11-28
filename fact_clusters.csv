@@ -1,0 +1,401 @@
+cluster_id,category,fact_text,x_coord,y_coord,z_coord,color_parity
+mathematics_cluster_1,Mathematics,The chain rule states (f∘g)' = f'(g(x))·g'(x).,1,1,1,1
+mathematics_cluster_1,Mathematics,A differential equation relates a function to its derivatives.,1,1,1,1
+mathematics_cluster_1,Mathematics,The curl measures the rotation of a vector field.,1,1,1,1
+mathematics_cluster_1,Mathematics,The empty set contains no elements.,1,1,1,1
+mathematics_cluster_1,Mathematics,The Laplace transform converts differential equations to algebraic equations.,1,1,1,1
+mathematics_cluster_1,Mathematics,The mean value theorem guarantees a point where f'(c) = average rate of change.,1,1,1,1
+mathematics_cluster_1,Mathematics,L'Hôpital's rule helps evaluate limits of indeterminate forms.,1,1,1,1
+mathematics_cluster_1,Mathematics,Matrices can be multiplied if their inner dimensions match.,1,1,1,1
+mathematics_cluster_1,Mathematics,Complex numbers have the form a + bi where i² = -1.,1,1,1,1
+mathematics_cluster_1,Mathematics,"The rank-nullity theorem relates dimension, rank, and nullity.",1,1,1,1
+mathematics_cluster_2,Mathematics,The inverse of a matrix is calculated using the adjoint and the determinant.,1,1,2,0
+mathematics_cluster_2,Mathematics,A set is a collection of distinct objects.,1,1,2,0
+mathematics_cluster_2,Mathematics,The gradient vector points in the direction of steepest ascent.,1,1,2,0
+mathematics_cluster_2,Mathematics,An inner product generalizes the dot product.,1,1,2,0
+mathematics_cluster_2,Mathematics,A compact set is closed and bounded in Euclidean space.,1,1,2,0
+mathematics_cluster_2,Mathematics,Eigenvalues satisfy the equation Ax = λx.,1,1,2,0
+mathematics_cluster_2,Mathematics,A connected set cannot be divided into two disjoint open sets.,1,1,2,0
+mathematics_cluster_2,Mathematics,A ring has two operations: addition and multiplication.,1,1,2,0
+mathematics_cluster_2,Mathematics,"A group is a set with an associative binary operation, identity, and inverses.",1,1,2,0
+mathematics_cluster_2,Mathematics,Asymptotes are lines that a curve approaches but never touches.,1,1,2,0
+mathematics_cluster_3,Mathematics,A function is injective if each output has exactly one input.,1,1,3,1
+mathematics_cluster_3,Mathematics,A vector has both magnitude and direction.,1,1,3,1
+mathematics_cluster_3,Mathematics,The dot product of two perpendicular vectors is zero.,1,1,3,1
+mathematics_cluster_3,Mathematics,Limits describe the behavior of functions as x approaches a value.,1,1,3,1
+mathematics_cluster_3,Mathematics,The kernel of a transformation is the set of vectors mapping to zero.,1,1,3,1
+mathematics_cluster_3,Mathematics,Inverse of a matrix is the transpose of the inverse of its adjoint.,1,1,3,1
+mathematics_cluster_3,Mathematics,"Fibonaci sequence is the sequence starting with 0 and 1, and each subsequent number is the sum of the previous two.",1,1,3,1
+mathematics_cluster_3,Mathematics,The divergence theorem relates flux through a surface to divergence in a volume.,1,1,3,1
+mathematics_cluster_3,Mathematics,The Heine-Borel theorem characterizes compact sets in Rⁿ.,1,1,3,1
+mathematics_cluster_3,Mathematics,A topology defines which sets are open in a space.,1,1,3,1
+mathematics_cluster_4,Mathematics,The intersection of sets contains only common elements.,1,1,4,0
+mathematics_cluster_4,Mathematics,Integration by parts uses the formula ∫udv = uv - ∫vdu.,1,1,4,0
+mathematics_cluster_4,Mathematics,The integral of 1/x is ln|x| + C.,1,1,4,0
+mathematics_cluster_4,Mathematics,Linear transformations preserve vector addition and scalar multiplication.,1,1,4,0
+mathematics_cluster_4,Mathematics,The quadratic formula is x = (-b ± √(b²-4ac)) / 2a.,1,1,4,0
+mathematics_cluster_4,Mathematics,Orthogonal matrices preserve lengths and angles.,1,1,4,0
+mathematics_cluster_4,Mathematics,The Fundamental Theorem of Calculus connects differentiation and integration.,1,1,4,0
+mathematics_cluster_4,Mathematics,A field is a ring where every nonzero element has a multiplicative inverse.,1,1,4,0
+mathematics_cluster_4,Mathematics,Fourier series represents periodic functions as sums of sines and cosines.,1,1,4,0
+mathematics_cluster_4,Mathematics,A complete metric space has all Cauchy sequences converging.,1,1,4,0
+mathematics_cluster_5,Mathematics,The determinant of a 2×2 matrix is ad - bc.,1,1,5,1
+mathematics_cluster_5,Mathematics,Integral of 1/x is ln|x| + C.,1,1,5,1
+mathematics_cluster_5,Mathematics,A metric space has a distance function satisfying specific properties.,1,1,5,1
+mathematics_cluster_5,Mathematics,A function is surjective if every element in the codomain is mapped.,1,1,5,1
+mathematics_cluster_5,Mathematics,Euler's identity is e^(iπ) + 1 = 0.,1,1,5,1
+mathematics_cluster_5,Mathematics,The union of sets A and B contains all elements from both.,1,1,5,1
+mathematics_cluster_5,Mathematics,The spectral theorem diagonalizes symmetric matrices.,1,1,5,1
+mathematics_cluster_5,Mathematics,The divergence measures the magnitude of a vector field's source or sink.,1,1,5,1
+mathematics_cluster_5,Mathematics,Stokes' theorem generalizes Green's theorem to surfaces.,1,1,5,1
+mathematics_cluster_5,Mathematics,Green's theorem relates a line integral to a double integral.,1,1,5,1
+physics_cluster_1,Physics,The third law states absolute zero cannot be reached.,1,1,6,0
+physics_cluster_1,Physics,Gravity is the weakest of the four fundamental forces.,1,1,6,0
+physics_cluster_1,Physics,Ampère's law relates magnetic fields to electric currents.,1,1,6,0
+physics_cluster_1,Physics,The continuity equation expresses conservation of mass in fluids.,1,1,6,0
+physics_cluster_1,Physics,Inductance opposes changes in current.,1,1,6,0
+physics_cluster_1,Physics,Newton's law of gravitation is F = Gm₁m₂/r².,1,1,6,0
+physics_cluster_1,Physics,Osmosis is diffusion of water across a semipermeable membrane.,1,1,6,0
+physics_cluster_1,Physics,Reynolds number predicts whether flow is laminar or turbulent.,1,1,6,0
+physics_cluster_1,Physics,Capacitance is the ability to store electrical charge.,1,1,6,0
+physics_cluster_1,Physics,Waive-particle duality means particles exhibit both wave and particle properties.,1,1,6,0
+physics_cluster_2,Physics,Kirchhoff's current law states current into a node equals current out.,1,1,7,1
+physics_cluster_2,Physics,The Carnot cycle is the most efficient heat engine cycle.,1,1,7,1
+physics_cluster_2,Physics,The cosmological constant represents dark energy in Einstein's equations.,1,1,7,1
+physics_cluster_2,Physics,Faraday's law relates changing magnetic flux to induced voltage.,1,1,7,1
+physics_cluster_2,Physics,Surface tension causes liquids to minimize surface area.,1,1,7,1
+physics_cluster_2,Physics,Bosons can occupy the same quantum state unlike fermions.,1,1,7,1
+physics_cluster_2,Physics,Diffusion is the movement of particles from high to low concentration.,1,1,7,1
+physics_cluster_2,Physics,The double-slit experiment demonstrates wave interference.,1,1,7,1
+physics_cluster_2,Physics,Electromagnetic force acts between charged particles.,1,1,7,1
+physics_cluster_2,Physics,Viscosity measures a fluid's resistance to flow.,1,1,7,1
+physics_cluster_3,Physics,Kirchhoff's voltage law states voltage around a loop sums to zero.,1,1,8,0
+physics_cluster_3,Physics,The gravitational constant G is approximately 6.674 × 10⁻¹¹ N·m²/kg².,1,1,8,0
+physics_cluster_3,Physics,The second law of thermodynamics states entropy always increases.,1,1,8,0
+physics_cluster_3,Physics,Redshift indicates objects moving away from us in an expanding universe.,1,1,8,0
+physics_cluster_3,Physics,Dark matter makes up about 27% of the universe's mass-energy.,1,1,8,0
+physics_cluster_3,Physics,Entropy measures disorder in a system.,1,1,8,0
+physics_cluster_3,Physics,The uncertainty principle limits simultaneous measurement of position and momentum.,1,1,8,0
+physics_cluster_3,Physics,The ideal gas law is PV = nRT.,1,1,8,0
+physics_cluster_3,Physics,Temperature measures average kinetic energy of particles.,1,1,8,0
+physics_cluster_3,Physics,Wave-particle duality means particles exhibit both wave and particle properties.,1,1,8,0
+physics_cluster_4,Physics,Schrödinger's equation describes quantum mechanical systems.,1,2,1,0
+physics_cluster_4,Physics,Capillary action draws liquids up narrow tubes.,1,2,1,0
+physics_cluster_4,Physics,Hawking radiation allows black holes to slowly evaporate.,1,2,1,0
+physics_cluster_4,Physics,Bernoulli's principle relates fluid speed to pressure.,1,2,1,0
+physics_cluster_4,Physics,Boyle's law states pressure and volume are inversely proportional at constant temperature.,1,2,1,0
+physics_cluster_4,Physics,Hubble's law relates galaxy recession velocity to distance.,1,2,1,0
+physics_cluster_4,Physics,The Pauli exclusion principle prevents identical fermions from occupying the same state.,1,2,1,0
+physics_cluster_4,Physics,The weak nuclear force is responsible for radioactive decay.,1,2,1,0
+physics_cluster_4,Physics,"The speed of light in vacuum is approximately 299,792,458 meters per second.",1,2,1,0
+physics_cluster_4,Physics,Archimedes' principle states buoyant force equals displaced fluid weight.,1,2,1,0
+physics_cluster_5,Physics,The Big Bang theory describes the universe's origin approximately 13.8 billion years ago.,1,2,2,1
+physics_cluster_5,Physics,The photoelectric effect shows light behave as particles called photoons.,1,2,2,1
+physics_cluster_5,Physics,Newton's first law states that objects in motion stay in motion unless acted upon.,1,2,2,1
+physics_cluster_5,Physics,Cosmic microwave background radiation is remnant heat from the Big Bang.,1,2,2,1
+physics_cluster_5,Physics,E=mc² relates energy to mass and the speed of light.,1,2,2,1
+physics_cluster_5,Physics,Ohm's law states V = IR for electrical circuits.,1,2,2,1
+physics_cluster_5,Physics,E=mc² relate energy to mass and the speed of light.,1,2,2,1
+physics_cluster_5,Physics,Lenz's law states induced current opposes the change causing it.,1,2,2,1
+physics_cluster_5,Physics,Charles's law states volume and temperature are proportional at constant pressure.,1,2,2,1
+physics_cluster_5,Physics,Black holes have escape velocities exceeding the speed of light.,1,2,2,1
+medicine/health_cluster_1,Medicine/Health,Insulin regulates blood sugar levels.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,T cells directly attack infected cells.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,"Serotonin regulates mood, sleep, and appetite.",1,2,3,0
+medicine/health_cluster_1,Medicine/Health,The lungs exchange oxygen and carbon dioxide.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,Lymph nodes filter lymph fluid and trap pathogens.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,B cells produce antibodies.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,The kidneys filter waste from blood to produce urine.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,The brain contains approximately 86 billion neurons.,1,2,3,0
+medicine/health_cluster_1,Medicine/Health,The human heart has four chamber (4),1,2,3,0
+medicine/health_cluster_1,Medicine/Health,DNA is a double helix structure discovered by Watson and Crick.,1,2,3,0
+medicine/health_cluster_2,Medicine/Health,Bacteria are single-celled prokaryotic organisms.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,The brain uses dopamine as a reward and motivation neurotransmitter.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,DNA is a double helix structure (6),1,2,4,1
+medicine/health_cluster_2,Medicine/Health,The trachea carries air to the bronchi.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,Asthma causes airway inflammation and constriction.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,Hemoglobin in red blood cells binds oxygen.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,Antibodies are proteins that recognize specific antigens.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,The liver detoxifies blood and produces bile.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,Synapses are junctures between neurons.,1,2,4,1
+medicine/health_cluster_2,Medicine/Health,Histamine triggers inflammatory responses.,1,2,4,1
+medicine/health_cluster_3,Medicine/Health,The diaphragm is the primary muscle of respiration.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,"Anaphylaxis is a severe, life-threatening allergic reaction.",1,2,5,0
+medicine/health_cluster_3,Medicine/Health,"The amygdala processes emotions, especially fear.",1,2,5,0
+medicine/health_cluster_3,Medicine/Health,Neurotransmitters are chemical messengers in the nervous system.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,Mitosis is cell division producing identical daughter cells.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,The parasympathetic nervous system promotes rest and digestion.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,The spinal cord transmits signals between brain and body.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,Mutations are changes in DNA sequence.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,Dopamine is associated with reward and motivation.,1,2,5,0
+medicine/health_cluster_3,Medicine/Health,Bronchi branch into smaller bronchioles in the lungs.,1,2,5,0
+medicine/health_cluster_4,Medicine/Health,Red blood cells carry oxygen throughout the body.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,Vaccines train the immune system to recognize pathogens.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,Chromosomes are structures containing DNA.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,Fungi can cause infections like athlete's foot.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,The thymus gland produces T cells.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,Alveoli are tiny air sacs where gas exchange occurs.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,COPD is chronic obstructive pulmonary disease.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,White blood cells fight infectious diseases and disease.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,Antibiotics kill or inhibit bacterial growth.,1,2,6,1
+medicine/health_cluster_4,Medicine/Health,White blood cells fight infections and disease.,1,2,6,1
+medicine/health_cluster_5,Medicine/Health,Type 1 diabetes is an autoimmune condition.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,Synapses are junctions between neurons (3),1,2,7,0
+medicine/health_cluster_5,Medicine/Health,Synapses are junctions between neurons.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,The brain contains approximately 86 billion neurons (2),1,2,7,0
+medicine/health_cluster_5,Medicine/Health,The human heart has two atria and two ventricles.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,The cerebellum coordinates movement and balance.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,Nephrons are the functional units of kidneys.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,Allergies are overreactions to harmless substances.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,Type 2 diabetes is often related to lifestyle factors.,1,2,7,0
+medicine/health_cluster_5,Medicine/Health,The bladder stores urine before excretion.,1,2,7,0
+european_history_cluster_1,European History,The Treaty of Westphalia in 1648 ended the Thirty Years' War.,1,2,8,1
+european_history_cluster_1,European History,The French Revolution began in 1789.,1,2,8,1
+european_history_cluster_1,European History,The Russian Civil War lasted from 1918 to 1921.,1,2,8,1
+european_history_cluster_1,European History,The Munich Agreement in 1938 appeased Hitler by ceding Czechoslovakia.,1,2,8,1
+european_history_cluster_1,European History,Hitler became Chancellor of Germany in 1933.,1,2,8,1
+european_history_cluster_1,European History,NATO was established in 1949.,1,2,8,1
+european_history_cluster_1,European History,The Battle of Waterloo in 1815 ended Napoleon's rule,1,2,8,1
+european_history_cluster_1,European History,The Russian Revolution of 1917 overthrew the Tsar.,1,2,8,1
+european_history_cluster_1,European History,The Battle of Stalingrad lasted from 1942 to 1943.,1,2,8,1
+european_history_cluster_1,European History,The Thirty Years' War lasted from 1618 to 1648.,1,2,8,1
+european_history_cluster_2,European History,"The storming of the Bastille occurred on July 14, 1789.",1,3,1,1
+european_history_cluster_2,European History,The Battle of Gettysburg in 1863 was a major turning point in the American Civil War.,1,3,1,1
+european_history_cluster_2,European History,The Berlin Airlift lasted from 1948 to 1949.,1,3,1,1
+european_history_cluster_2,European History,"The Magna Carta was signed in 1215, limiting royal power.",1,3,1,1
+european_history_cluster_2,European History,The Berlin Wall was built in 1961.,1,3,1,1
+european_history_cluster_2,European History,The Great Depression began with the 1929 stock market crash.,1,3,1,1
+european_history_cluster_2,European History,The Renaissance began in Italy in the 14th century.,1,3,1,1
+european_history_cluster_2,European History,The Warsaw Pact was formed in 1955.,1,3,1,1
+european_history_cluster_2,European History,The Greek War of Independence lasted from 1821 to 1829.,1,3,1,1
+european_history_cluster_2,European History,"The attack on Pearl Harbor occurred on December 7, 1941.",1,3,1,1
+european_history_cluster_3,European History,The Congress of Vienna in 1815 redrew Europe's map after Napoleon.,1,3,2,0
+european_history_cluster_3,European History,Mussolini's March on Rome occurred in 1922.,1,3,2,0
+european_history_cluster_3,European History,The Berlin Conference of 1884-1885 divided Africa among European powers.,1,3,2,0
+european_history_cluster_3,European History,The Franco-Prussian War lasted from 1870 to 1871.,1,3,2,0
+european_history_cluster_3,European History,The Black Death killed millions in Europe during the 14th century.,1,3,2,0
+european_history_cluster_3,European History,The unification of Italy was completed in 1871.,1,3,2,0
+european_history_cluster_3,European History,The unification of Germany was completed in 1871 under Bismarck.,1,3,2,0
+european_history_cluster_3,European History,"D-Day, the Normandy invasion, occurred on June 6, 1944.",1,3,2,0
+european_history_cluster_3,European History,The Spanish Armada was defeated by England in 1588.,1,3,2,0
+european_history_cluster_3,European History,The Weimar Republic governed Germany from 1919 to 1933.,1,3,2,0
+european_history_cluster_4,European History,The Hungarian Revolution was crushed by Soviet forces in 1956.,1,3,3,1
+european_history_cluster_4,European History,The Crimean War was fought from 1853 to 1856.,1,3,3,1
+european_history_cluster_4,European History,Napoleon Bonaparte crowned himself Emperor in 1804.,1,3,3,1
+european_history_cluster_4,European History,World War II ended in 1945.,1,3,3,1
+european_history_cluster_4,European History,The League of Nations was established in 1920.,1,3,3,1
+european_history_cluster_4,European History,The Bolsheviks seized power in October 1917.,1,3,3,1
+european_history_cluster_4,European History,The United Nations was founded in 1945.,1,3,3,1
+european_history_cluster_4,European History,The primary cause of World War I was the assassination of Archduke Franz Ferdinand in 1914.,1,3,3,1
+european_history_cluster_4,European History,The Act of Union in 1707 united England and Scotland.,1,3,3,1
+european_history_cluster_4,European History,The Dreyfus Affair divided France in the 1890s.,1,3,3,1
+european_history_cluster_5,European History,"World War II began on September 1, 1939 with Germany's invasion of Poland.",1,3,4,0
+european_history_cluster_5,European History,Michelangelo painted the Sistine Chapel ceiling from 1508-1512.,1,3,4,0
+european_history_cluster_5,European History,The Spanish Civil War lasted from 1936 to 1939.,1,3,4,0
+european_history_cluster_5,European History,Hyperinflation devastated Germany's economy in 1923.,1,3,4,0
+european_history_cluster_5,European History,"The Treaty of Versailles was signed in 1919, ending World War I.",1,3,4,0
+european_history_cluster_5,European History,Leonardo da Vinci painted the Mona Lisa around 1503-1519.,1,3,4,0
+european_history_cluster_5,European History,The atomic bombs were dropped on Hiroshima and Nagasaki in August 1945.,1,3,4,0
+european_history_cluster_5,European History,The Russian Revolution of 1905 forced Tsar Nicholas II to create a parliament.,1,3,4,0
+european_history_cluster_5,European History,The Palace of Versailles was built under Louis XIV.,1,3,4,0
+european_history_cluster_5,European History,The Iron Curtain divided Europe after World War II.,1,3,4,0
+english_literature_cluster_1,English Literature,Dracula is an epistolary novel told through letters and diary entries.,1,3,5,1
+english_literature_cluster_1,English Literature,The Hobbit precedes The Lord of the Rings.,1,3,5,1
+english_literature_cluster_1,English Literature,D.H. Lawrence wrote Lady Chatterley's Lover.,1,3,5,1
+english_literature_cluster_1,English Literature,Hamlet is generally considered William Shakespeare's longest play.,1,3,5,1
+english_literature_cluster_1,English Literature,"According to the text, Hamlet is considered William Shakespeare's longest play and was written in 1601.",1,3,5,1
+english_literature_cluster_1,English Literature,"Jane Eyre features the famous line Reader, I married him.",1,3,5,1
+english_literature_cluster_1,English Literature,George Orwell wrote 1984 in 1949.,1,3,5,1
+english_literature_cluster_1,English Literature,David Copperfield is considered Dickens' most autobiographical novel.,1,3,5,1
+english_literature_cluster_1,English Literature,Othello is a tragedy about jealousy and manipulation.,1,3,5,1
+english_literature_cluster_1,English Literature,T.S. Eliot wrote The Waste Land in 1922.,1,3,5,1
+english_literature_cluster_2,English Literature,"""King Lear"" is a tragedy about a king who divides his kingdom among his daughters.",1,3,6,0
+english_literature_cluster_2,English Literature,Miss Marple is another of Christie's detective characters.,1,3,6,0
+english_literature_cluster_2,English Literature,Sons and Lovers is Lawrence's semi-autobiographical novel.,1,3,6,0
+english_literature_cluster_2,English Literature,"""Shakespeare's sonnets"" are 14-line poems.",1,3,6,0
+english_literature_cluster_2,English Literature,Jude the Obscure was Hardy's final novel.,1,3,6,0
+english_literature_cluster_2,English Literature,Wuthering Heights is set on the Yorkshire moors.,1,3,6,0
+english_literature_cluster_2,English Literature,The Importance of Being Earnest is a comedy by Oscar Wilde.,1,3,6,0
+english_literature_cluster_2,English Literature,Oliver Twist tells the story of an orphan in Victorian London.,1,3,6,0
+english_literature_cluster_2,English Literature,The creature in Frankenstein is often mistakenly called Frankenstein.,1,3,6,0
+english_literature_cluster_2,English Literature,Dubliners is Joyce's collection of short stories.,1,3,6,0
+english_literature_cluster_3,English Literature,Charles Dickens wrote A Tale of Two Cities set during the French Revolution.,1,3,7,1
+english_literature_cluster_3,English Literature,"""Romeo and Juliet"" is a tragedy about two star-crossed lovers.",1,3,7,1
+english_literature_cluster_3,English Literature,The Canterbury Tales features pilgrims telling stories on their journey.,1,3,7,1
+english_literature_cluster_3,English Literature,"""To be or not to be"" is a famous soliloquy from ""Hamlet.""",1,3,7,1
+english_literature_cluster_3,English Literature,"Great Expectations follows the life of Pip, an orphan.",1,3,7,1
+english_literature_cluster_3,English Literature,Big Brother is the dictator in 1984.,1,3,7,1
+english_literature_cluster_3,English Literature,George Eliot was the pen name of Mary Ann Evans.,1,3,7,1
+english_literature_cluster_3,English Literature,"""The Tempest"" is a comedy involving magical creatures.",1,3,7,1
+english_literature_cluster_3,English Literature,Mary Shelley wrote Frankenstein in 1818.,1,3,7,1
+english_literature_cluster_3,English Literature,The Tempest is believed to be Shakespeare's final play.,1,3,7,1
+english_literature_cluster_4,English Literature,To the Lighthouse is a modernist novel by Woolf.,1,3,8,0
+english_literature_cluster_4,English Literature,Agatha Christie wrote Murder on the Orient Express.,1,3,8,0
+english_literature_cluster_4,English Literature,J.R.R. Tolkien wrote The Lord of the Rings trilogy.,1,3,8,0
+english_literature_cluster_4,English Literature,Shakespeare was born in the village of Stratford-upon-Avon in 1564.,1,3,8,0
+english_literature_cluster_4,English Literature,Sense and Sensibility contrasts two sisters with different temperaments.,1,3,8,0
+english_literature_cluster_4,English Literature,Frankenstein is considered one of the first science fiction novels.,1,3,8,0
+english_literature_cluster_4,English Literature,Middlemarch is considered George Eliot's masterpiece.,1,3,8,0
+english_literature_cluster_4,English Literature,Brave New World depicts a dystopian future society.,1,3,8,0
+english_literature_cluster_4,English Literature,King Lear tells the story of a king who divides his kingdom among his daughters.,1,3,8,0
+english_literature_cluster_4,English Literature,Bram Stoker wrote Dracula in 1897.,1,3,8,0
+english_literature_cluster_5,English Literature,"James Joyce wrote Ulysses, a modernist masterpiece.",1,4,1,0
+english_literature_cluster_5,English Literature,"Sonnets are 14-line poems, and Shakespeare wrote 154 of them.",1,4,1,0
+english_literature_cluster_5,English Literature,Emma is another novel by Jane Austen about a matchmaker.,1,4,1,0
+english_literature_cluster_5,English Literature,A Portrait of the Artist as a Young Man is Joyce's semi-autobiographical novel.,1,4,1,0
+english_literature_cluster_5,English Literature,Beowulf is an Old English epic poem about a hero fighting monsters.,1,4,1,0
+english_literature_cluster_5,English Literature,Geoffrey Chaucer wrote The Canterbury Tales in Middle English.,1,4,1,0
+english_literature_cluster_5,English Literature,Animal Farm is Orwell's allegorical novella about totalitarianism.,1,4,1,0
+english_literature_cluster_5,English Literature,Pride and Prejudice features Elizabeth Bennet and Mr. Darcy.,1,4,1,0
+english_literature_cluster_5,English Literature,C.S. Lewis wrote The Chronicles of Narnia series.,1,4,1,0
+english_literature_cluster_5,English Literature,Shakespeare was born in Stratford-upon-Avon in 1564.,1,4,1,0
+economics_cluster_1,Economics,The Federal Reserve is the central bank of the United States.,1,4,2,1
+economics_cluster_1,Economics,A recession is two consecutive quarters of negative GDP growth.,1,4,2,1
+economics_cluster_1,Economics,The tragedy of the commons occurs when shared resources are overused.,1,4,2,1
+economics_cluster_1,Economics,Subsidies encourage activities with positive externalities.,1,4,2,1
+economics_cluster_1,Economics,The discount rate is the interest rate the Fed charges banks.,1,4,2,1
+economics_cluster_1,Economics,Accounting profit is revenue minus explicit costs.,1,4,2,1
+economics_cluster_1,Economics,Inflation is the rate at which the general price level rises.,1,4,2,1
+economics_cluster_1,Economics,"The term ""supply and demand"" refers to the relationship between the amount of a good or service offered and the amount of demand for it.",1,4,2,1
+economics_cluster_1,Economics,Fixed exchange rates are pegged to another currency.,1,4,2,1
+economics_cluster_1,Economics,Fixed costs do not vary with output.,1,4,2,1
+economics_cluster_2,Economics,Exchange rates determine the value of one currency in terms of another.,1,4,3,0
+economics_cluster_2,Economics,Trade deficits occur when imports exceed exports.,1,4,3,0
+economics_cluster_2,Economics,Price discrimination charges different prices to different customers.,1,4,3,0
+economics_cluster_2,Economics,Frictional unemployment occurs during job transitions.,1,4,3,0
+economics_cluster_2,Economics,Elasticity measures how quantity demanded responds to price changes.,1,4,3,0
+economics_cluster_2,Economics,The Coase theorem suggests private bargaining can solve externalities.,1,4,3,0
+economics_cluster_2,Economics,Open market operations involve buying and selling government securities.,1,4,3,0
+economics_cluster_2,Economics,Perfect competition features many firms selling identical products.,1,4,3,0
+economics_cluster_2,Economics,Fiscal policy uses government spending and taxation.,1,4,3,0
+economics_cluster_2,Economics,Monopoly is a market with a single seller.,1,4,3,0
+economics_cluster_3,Economics,Marginal utility is the additional satisfaction from consuming one more unit.,1,4,4,1
+economics_cluster_3,Economics,Pigouvian taxes correct negative externalities.,1,4,4,1
+economics_cluster_3,Economics,The World Bank funds development projects.,1,4,4,1
+economics_cluster_3,Economics,Quotas limit the quantity of imports.,1,4,4,1
+economics_cluster_3,Economics,Quantitative easing is unconventional monetary policy expanding the money supply.,1,4,4,1
+economics_cluster_3,Economics,Absolute advantage means producing more efficiently than others.,1,4,4,1
+economics_cluster_3,Economics,Economies of scale reduce average costs as production increases.,1,4,4,1
+economics_cluster_3,Economics,Profit is total revenue minus total cost.,1,4,4,1
+economics_cluster_3,Economics,Barriers to entry prevent new firms from entering a market.,1,4,4,1
+economics_cluster_3,Economics,Economic profit exceeds normal profit.,1,4,4,1
+economics_cluster_4,Economics,The 2008 financial crisis was triggered by subprime mortgages.,1,4,5,0
+economics_cluster_4,Economics,Variable costs change with the level of production.,1,4,5,0
+economics_cluster_4,Economics,Structural unemployment results from skills mismatch.,1,4,5,0
+economics_cluster_4,Economics,Deflation is a decrease in the general price level.,1,4,5,0
+economics_cluster_4,Economics,Opportunity cost is the value of the next best alternative foregone.,1,4,5,0
+economics_cluster_4,Economics,"Economics is the study of how people and societies allocate resources in order to maximize their utility, or happiness, as measured by their subjective well-being (SWB).",1,4,5,0
+economics_cluster_4,Economics,GDP is the total value of goods and services produced in a country.,1,4,5,0
+economics_cluster_4,Economics,A depression is a severe and prolonged economic downturn.,1,4,5,0
+economics_cluster_4,Economics,Marginal cost is the cost of producing one additional unit.,1,4,5,0
+economics_cluster_4,Economics,Supply and demand determine prices in a market economy.,1,4,5,0
+economics_cluster_5,Economics,Average cost is total cost divided by quantity.,1,4,6,1
+economics_cluster_5,Economics,The Consumer Price Index measures changes in the cost of living.,1,4,6,1
+economics_cluster_5,Economics,Comparative advantage explains why countries trade.,1,4,6,1
+economics_cluster_5,Economics,Economic profit subtracts both explicit and implicit costs.,1,4,6,1
+economics_cluster_5,Economics,Negative externalities impose costs on others.,1,4,6,1
+economics_cluster_5,Economics,Public goods are non-excludable and non-rivalrous.,1,4,6,1
+economics_cluster_5,Economics,Floating exchange rates are determined by market forces.,1,4,6,1
+economics_cluster_5,Economics,The World Trade Organization promotes international trade.,1,4,6,1
+economics_cluster_5,Economics,Diseconomies of scale increase average costs at high production levels.,1,4,6,1
+economics_cluster_5,Economics,Tariffs are taxes on imported goods.,1,4,6,1
+arts_cluster_1,Arts,Johann Sebastian Bach composed the Brandenburg Concertos.,1,4,7,0
+arts_cluster_1,Arts,Monet's Water Lilies series features his garden at Giverny.,1,4,7,0
+arts_cluster_1,Arts,Frank Lloyd Wright designed Fallingwater.,1,4,7,0
+arts_cluster_1,Arts,Miles Davis was influential in several jazz styles.,1,4,7,0
+arts_cluster_1,Arts,Abbey Road is one of The Beatles' most famous albums.,1,4,7,0
+arts_cluster_1,Arts,The Kiss is another famous sculpture by Rodin.,1,4,7,0
+arts_cluster_1,Arts,"In the 15th century, Leonardo da Vinci painted the Mona Lisa, which was housed in the Louvre Museum in Paris.",1,4,7,0
+arts_cluster_1,Arts,The Beatles revolutionized popular music in the 1960s.,1,4,7,0
+arts_cluster_1,Arts,Bob Dylan blended folk and rock music.,1,4,7,0
+arts_cluster_1,Arts,Jackson Pollock pioneered drip painting.,1,4,7,0
+arts_cluster_2,Arts,The Two Fridas depicts Kahlo's dual heritage.,1,4,8,1
+arts_cluster_2,Arts,Pink Floyd's The Dark Side of the Moon is one of the best-selling albums.,1,4,8,1
+arts_cluster_2,Arts,The Pietà shows Mary holding the dead body of Jesus.,1,4,8,1
+arts_cluster_2,Arts,Notre-Dame Cathedral in Paris is a Gothic masterpiece.,1,4,8,1
+arts_cluster_2,Arts,The International Style emphasized function and simplicity.,1,4,8,1
+arts_cluster_2,Arts,Postmodern architecture rejected modernist principles.,1,4,8,1
+arts_cluster_2,Arts,Van Gogh cut off part of his own ear.,1,4,8,1
+arts_cluster_2,Arts,Auguste Rodin sculpted The Thinker.,1,4,8,1
+arts_cluster_2,Arts,Beethoven continued composing after becoming deaf.,1,4,8,1
+arts_cluster_2,Arts,Andy Warhol was a leading figure in Pop Art.,1,4,8,1
+arts_cluster_3,Arts,Mozart's Requiem was left unfinished at his death.,1,5,1,1
+arts_cluster_3,Arts,"Art Nouveau featured organic, flowing lines.",1,5,1,1
+arts_cluster_3,Arts,The Bauhaus school influenced modern design.,1,5,1,1
+arts_cluster_3,Arts,Vincent van Gogh painted Starry Night in 1889.,1,5,1,1
+arts_cluster_3,Arts,The Rolling Stones formed in 1962.,1,5,1,1
+arts_cluster_3,Arts,The Winged Victory of Samothrace is a Hellenistic sculpture.,1,5,1,1
+arts_cluster_3,Arts,Jazz originated in African American communities in New Orleans.,1,5,1,1
+arts_cluster_3,Arts,Le Corbusier was a pioneer of modern architecture.,1,5,1,1
+arts_cluster_3,Arts,Louis Armstrong was a pioneering jazz trumpeter.,1,5,1,1
+arts_cluster_3,Arts,Guernica by Picasso depicts the horrors of war.,1,5,1,1
+arts_cluster_4,Arts,Led Zeppelin pioneered hard rock and heavy metal.,1,5,2,0
+arts_cluster_4,Arts,The Venus de Milo is an ancient Greek statue.,1,5,2,0
+arts_cluster_4,Arts,Duke Ellington was a prolific jazz composer and bandleader.,1,5,2,0
+arts_cluster_4,Arts,Wolfgang Amadeus Mozart composed over 600 works.,1,5,2,0
+arts_cluster_4,Arts,The Mona Lisa is housed in the Louvre Museum in Paris.,1,5,2,0
+arts_cluster_4,Arts,Claude Monet was a founder of French Impressionism.,1,5,2,0
+arts_cluster_4,Arts,Ludwig van Beethoven bridged Classical and Romantic periods.,1,5,2,0
+arts_cluster_4,Arts,Warhol's Campbell's Soup Cans challenged traditional art.,1,5,2,0
+arts_cluster_4,Arts,Chopin's Nocturnes are romantic piano pieces.,1,5,2,0
+arts_cluster_4,Arts,Claude Debussy was a leading Impressionist composer.,1,5,2,0
+arts_cluster_5,Arts,The Romanesque style preceded Gothic architecture.,1,5,3,1
+arts_cluster_5,Arts,"Impression, Sunrise by Monet gave Impressionism its name.",1,5,3,1
+arts_cluster_5,Arts,The Palace of Versailles exemplifies Baroque architecture.,1,5,3,1
+arts_cluster_5,Arts,Swan Lake is another famous Tchaikovsky ballet.,1,5,3,1
+arts_cluster_5,Arts,Clair de Lune is one of Debussy's most famous pieces.,1,5,3,1
+arts_cluster_5,Arts,Pyotr Ilyich Tchaikovsky composed The Nutcracker ballet.,1,5,3,1
+arts_cluster_5,Arts,The Sydney Opera House was designed by Jørn Utzon.,1,5,3,1
+arts_cluster_5,Arts,Leonard da Vinci created the Last Supper between 1495 and 1498.,1,5,3,1
+arts_cluster_5,Arts,Gothic architecture features pointed arches and flying buttresses.,1,5,3,1
+arts_cluster_5,Arts,The Guggenheim Museum Bilbao was designed by Frank Gehry.,1,5,3,1
+philosophy_cluster_1,Philosophy,Hume questioned causation and induction.,1,5,4,0
+philosophy_cluster_1,Philosophy,Friedrich Nietzsche proclaimed God is dead.,1,5,4,0
+philosophy_cluster_1,Philosophy,Søren Kierkegaard is considered the father of existentialism.,1,5,4,0
+philosophy_cluster_1,Philosophy,Karl Marx developed dialectical materialism.,1,5,4,0
+philosophy_cluster_1,Philosophy,Aristotle's Nicomachean Ethics explores virtue and happiness.,1,5,4,0
+philosophy_cluster_1,Philosophy,Jean-Paul Sartre said existence precedes essence.,1,5,4,0
+philosophy_cluster_1,Philosophy,Kant distinguished phenomena from noumena.,1,5,4,0
+philosophy_cluster_1,Philosophy,Sartre's existentialism emphasizes radical freedom.,1,5,4,0
+philosophy_cluster_1,Philosophy,Martin Heidegger wrote Being and Time.,1,5,4,0
+philosophy_cluster_1,Philosophy,John Rawls' Theory of Justice uses the veil of ignorance.,1,5,4,0
+philosophy_cluster_2,Philosophy,Ludwig Wittgenstein wrote Tractatus Logico-Philosophicus.,1,5,5,1
+philosophy_cluster_2,Philosophy,Peter Singer is known for animal rights advocacy.,1,5,5,1
+philosophy_cluster_2,Philosophy,Locke's Two Treatises of Government influenced liberal democracy.,1,5,5,1
+philosophy_cluster_2,Philosophy,Spinoza's Ethics presents a pantheistic view of God and nature.,1,5,5,1
+philosophy_cluster_2,Philosophy,Wittgenstein's later work emphasized language games.,1,5,5,1
+philosophy_cluster_2,Philosophy,"Hegel's dialectic involves thesis, antithesis, and synthesis.",1,5,5,1
+philosophy_cluster_2,Philosophy,Immanuel Kant wrote Critique of Pure Reason.,1,5,5,1
+philosophy_cluster_2,Philosophy,Martha Nussbaum developed the capabilities approach.,1,5,5,1
+philosophy_cluster_2,Philosophy,Jeremy Bentham founded utilitarianism.,1,5,5,1
+philosophy_cluster_2,Philosophy,De Beauvoir analyzed women's oppression.,1,5,5,1
+philosophy_cluster_3,Philosophy,Deconstruction questions binary oppositions in texts.,1,5,6,0
+philosophy_cluster_3,Philosophy,Aristotle founded the Lyceum in Athens.,1,5,6,0
+philosophy_cluster_3,Philosophy,Thomas Kuhn introduced the concept of paradigm shifts.,1,5,6,0
+philosophy_cluster_3,Philosophy,The Allegory of the Cave illustrates Plato's theory of Forms.,1,5,6,0
+philosophy_cluster_3,Philosophy,Utilitarianism seeks the greatest happiness for the greatest number.,1,5,6,0
+philosophy_cluster_3,Philosophy,The will to power is central to Nietzsche's philosophy.,1,5,6,0
+philosophy_cluster_3,Philosophy,Historical materialism explains history through economic factors.,1,5,6,0
+philosophy_cluster_3,Philosophy,Hume's is-ought problem addresses deriving values from facts.,1,5,6,0
+philosophy_cluster_3,Philosophy,"Robert Nozick defended libertarianism in Anarchy, State, and Utopia.",1,5,6,0
+philosophy_cluster_3,Philosophy,Plato's Republic discusses justice and the ideal state.,1,5,6,0
+philosophy_cluster_4,Philosophy,George Berkeley was an idealist who denied material substance.,1,5,7,1
+philosophy_cluster_4,Philosophy,Mill's On Liberty defends individual freedom.,1,5,7,1
+philosophy_cluster_4,Philosophy,Nietzsche's concept of the Übermensch represents human potential.,1,5,7,1
+philosophy_cluster_4,Philosophy,Kierkegaard emphasized individual choice and subjective truth.,1,5,7,1
+philosophy_cluster_4,Philosophy,Pragmatism judges truth by practical consequences.,1,5,7,1
+philosophy_cluster_4,Philosophy,Bertrand Russell was a logician and philosopher.,1,5,7,1
+philosophy_cluster_4,Philosophy,John Locke argued the mind is a blank slate at birth.,1,5,7,1
+philosophy_cluster_4,Philosophy,Albert Camus explored the absurd in human existence.,1,5,7,1
+philosophy_cluster_4,Philosophy,Arthur Schopenhauer emphasized the role of will.,1,5,7,1
+philosophy_cluster_4,Philosophy,Cartesian dualism separates mind and body.,1,5,7,1
+philosophy_cluster_5,Philosophy,John Stuart Mill was a utilitarian philosopher.,1,5,8,0
+philosophy_cluster_5,Philosophy,"Plato was a student of Socrates and taught the philosophy known as the ""Socratic method.""",1,5,8,0
+philosophy_cluster_5,Philosophy,The Golden Mean is Aristotle's concept of moderation.,1,5,8,0
+philosophy_cluster_5,Philosophy,Socrates is known for the Socratic method of questioning.,1,5,8,0
+philosophy_cluster_5,Philosophy,"The first fact: Aristotle said I think, therefore I am.",1,5,8,0
+philosophy_cluster_5,Philosophy,Descartes' method of doubt questioned all beliefs.,1,5,8,0
+philosophy_cluster_5,Philosophy,Simone de Beauvoir wrote The Second Sex.,1,5,8,0
+philosophy_cluster_5,Philosophy,David Hume was a Scottish Empiricist and skeptic.,1,5,8,0
+philosophy_cluster_5,Philosophy,The veil of ignorance ensures fairness in social contracts.,1,5,8,0
+philosophy_cluster_5,Philosophy,Foucault's Discipline and Punish examines surveillance.,1,5,8,0

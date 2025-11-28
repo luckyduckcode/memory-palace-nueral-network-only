@@ -1,0 +1,9 @@
+numpy
+pandas
+requests
+torch
+sympy
+flask
+flask-cors
+spacy>=3.0.0
+nltk>=3.8
